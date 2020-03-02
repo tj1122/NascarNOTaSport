@@ -1,0 +1,31 @@
+@charset 'utf-8';
+
+// Helpers Styles
+@import "helpers/_mixins";
+@import "helpers/_variables";
+
+// Base Styles
+@import "base/_normalize";
+@import "base/_base";
+@import "base/_typography";
+
+// Components Styles
+@import "components/_buttons";
+@import "components/_forms";
+@import "components/_navigation";
+
+// Layout Styles
+@import "layout/_header";
+@import "layout/_footer";
+
+// Index Section Styles
+// @import "index-setion/_name_of_scss_file";
+
+// Athletes Section Styles
+//@import "athletes-section/_name_of_scss_file";
+
+// Sponsors Section Styles
+//@import "sponsors-section/_name_of_scss_file";
+
+// Testimony Section Styles
+//@import "testimony-section//_name_of_scss_file";
