@@ -77,6 +77,61 @@
 		"plM": 52780316221407,
 		"prP": 0
 		},
+	"/deploy/img/index/page1_hero.jpg": {
+		"ft": 16384,
+		"iS": 32782,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/deploy/img/index/page1_hero.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/deploy/img/index/page1_hero2.jpg": {
+		"ft": 16384,
+		"iS": 27422,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/deploy/img/index/page1_hero2.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/deploy/img/index/page1_link1.jpg": {
+		"ft": 16384,
+		"iS": 36741,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/deploy/img/index/page1_link1.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/deploy/img/index/page1_link2.jpg": {
+		"ft": 16384,
+		"iS": 38336,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/deploy/img/index/page1_link2.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/deploy/img/index/page1_link3.jpg": {
+		"ft": 16384,
+		"iS": 45444,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/deploy/img/index/page1_link3.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
 	"/deploy/index.html": {
 		"cB": 0,
 		"ft": 8192,
@@ -147,6 +202,22 @@
 		"oAP": "/dev/header.html",
 		"oF": 0
 		},
+	"/dev/index/gallery.kit": {
+		"cB": 0,
+		"ft": 2048,
+		"hM": 0,
+		"oA": 1,
+		"oAP": "/dev/index/gallery.html",
+		"oF": 0
+		},
+	"/dev/index/hero.kit": {
+		"cB": 0,
+		"ft": 2048,
+		"hM": 0,
+		"oA": 1,
+		"oAP": "/dev/index/hero.html",
+		"oF": 0
+		},
 	"/dev/index/index.kit": {
 		"cB": 0,
 		"ft": 2048,
@@ -154,6 +225,30 @@
 		"oA": 0,
 		"oAP": "/deploy/index.html",
 		"oF": 2
+		},
+	"/dev/index/nascar.kit": {
+		"cB": 0,
+		"ft": 2048,
+		"hM": 0,
+		"oA": 1,
+		"oAP": "/dev/index/nascar.html",
+		"oF": 0
+		},
+	"/dev/index/notSport.kit": {
+		"cB": 0,
+		"ft": 2048,
+		"hM": 0,
+		"oA": 1,
+		"oAP": "/dev/index/notSport.html",
+		"oF": 0
+		},
+	"/dev/index/requirements.kit": {
+		"cB": 0,
+		"ft": 2048,
+		"hM": 0,
+		"oA": 1,
+		"oAP": "/dev/index/requirements.html",
+		"oF": 0
 		},
 	"/dev/js/burger/burger-click.js": {
 		"bF": 0,
