@@ -1,0 +1,43 @@
+#sponsors-hero{
+  background-image: url("../img/sponsors/hero.jpg");
+  background-size: cover;
+  background-position: 70% center;
+  background-repeat: no-repeat;
+  height: 70vh;
+  padding-top: 68px;
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-areas: "red-opacity no-red-opacity red-opacity";
+
+  @include md{
+    grid-template-columns: 1.5fr 1fr 0fr;
+    grid-template-rows: 1fr;
+    background-position: center;
+    background-position: 30% center;
+    grid-template-areas: "red-opacity no-red-opacity .";
+  }
+  @include lg{
+    grid-template-columns: 2fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: "red-opacity no-red-opacity red-opacity";
+  }
+
+  .red-opacity{
+    background-color: rgba(164, 27, 0, 0.7);
+    grid-area: "red-opacity";
+
+
+
+    h1{
+      color: $white;
+      font-size: rem-calc(36);
+      display: grid;
+      padding-left: 20px;
+      padding-top: 40px;
+      align-items: center;
+      @include md{
+        font-size: rem-calc(75);
+      }
+    }
+  }
+}

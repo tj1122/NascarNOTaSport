@@ -462,3 +462,45 @@ footer {
       footer > div ul li {
         margin-left: 14px;
         cursor: pointer; }
+
+#sponsors-hero {
+  background-image: url("../img/sponsors/hero.jpg");
+  background-size: cover;
+  background-position: 70% center;
+  background-repeat: no-repeat;
+  height: 70vh;
+  padding-top: 68px;
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-areas: "red-opacity no-red-opacity red-opacity"; }
+  @media (min-width: 768px) {
+    #sponsors-hero {
+      grid-template-columns: 1.5fr 1fr 0fr;
+      grid-template-rows: 1fr;
+      background-position: center;
+      background-position: 30% center;
+      grid-template-areas: "red-opacity no-red-opacity ."; } }
+  @media (min-width: 992px) {
+    #sponsors-hero {
+      grid-template-columns: 2fr 1fr 1fr;
+      grid-template-rows: 1fr;
+      grid-template-areas: "red-opacity no-red-opacity red-opacity"; } }
+  #sponsors-hero .red-opacity {
+    background-color: rgba(164, 27, 0, 0.7);
+    grid-area: "red-opacity"; }
+    #sponsors-hero .red-opacity h1 {
+      color: #fff;
+      font-size: 2.25rem;
+      display: grid;
+      padding-left: 20px;
+      padding-top: 40px;
+      align-items: center; }
+      @media (min-width: 768px) {
+        #sponsors-hero .red-opacity h1 {
+          font-size: 4.6875rem; } }
+
+#overwhelming > div {
+  background-color: #F1F1F1; }
+  #overwhelming > div h2 {
+    color: #EC320D;
+    font-size: 1.875rem; }
