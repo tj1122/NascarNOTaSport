@@ -1,0 +1,61 @@
+/* =============
+    Requirements
+============= */
+#requirements{
+    >div{
+        >article{
+            padding: 0 30px;
+            h1{
+                font-size: rem-calc(50);
+                color: $purple;
+            }
+            h2{
+                color: $purple;
+                padding-top: 20px;
+                font-weight: 700;
+            }
+        }
+        >section{
+            >div{
+                display:grid;
+                grid-template-columns:30px 15% auto 30px;
+                grid-template-areas:".  number1 content1 ." ". number2 content2 ." ". number3  content3  .";
+                h6{
+                    padding-top:20px;
+                    margin: 0;
+                }
+                p{
+                    padding-top:20px;
+                    font-weight: 600;
+                    color: $purple;
+                    span:nth-child(odd){
+                        color: $red;
+                    }
+                    span:nth-child(even){
+                        color: $purple;
+                        font-weight: 400;
+                        font-size:rem-calc(14);
+                    }
+                }
+                h6:nth-child(1){
+                    grid-area:number1;
+                }
+                p:nth-child(2){
+                    grid-area:content1;
+                }
+                h6:nth-child(3){
+                    grid-area:number2;
+                }
+                p:nth-child(4){
+                    grid-area:content2;
+                }
+                h6:nth-child(5){
+                    grid-area:number3;
+                }
+                p:nth-child(6){
+                    grid-area:content3;
+                }
+            }
+        }
+    }
+}

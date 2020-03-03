@@ -428,6 +428,19 @@
 		"oS": 0,
 		"uL": 1
 		},
+	"/dev/scss/index-sections/_gallery.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "/dev/scss/index-sections/_gallery.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
 	"/dev/scss/index-sections/_nascar.scss": {
 		"aP": 0,
 		"bl": 0,
@@ -450,6 +463,19 @@
 		"ma": 0,
 		"oA": 1,
 		"oAP": "/dev/scss/index-sections/_notSport.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
+	"/dev/scss/index-sections/_requirements.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "/dev/scss/index-sections/_requirements.css",
 		"oF": 0,
 		"oS": 0,
 		"uL": 1
