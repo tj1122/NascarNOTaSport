@@ -462,3 +462,111 @@ footer {
       footer > div ul li {
         margin-left: 14px;
         cursor: pointer; }
+
+#athletes-hero {
+  background-image: url("../img/athletes/athletes-hero.jpg");
+  height: 300px;
+  background-position: 50% -50%;
+  background-size: 150%;
+  display: flex;
+  align-items: center; }
+  @media (min-width: 768px) {
+    #athletes-hero {
+      height: 600px;
+      background-size: cover;
+      background-position: 5% center; } }
+  @media (min-width: 992px) {
+    #athletes-hero {
+      height: 800px;
+      background-position: center; } }
+  #athletes-hero h1 {
+    font-size: 1.875rem;
+    color: #fff;
+    font-weight: 800;
+    width: 40%;
+    padding-top: 30px;
+    padding-left: 30px;
+    line-height: 1; }
+    @media (min-width: 768px) {
+      #athletes-hero h1 {
+        padding-top: 0;
+        font-size: 4.375rem;
+        padding-left: 50px; } }
+    @media (min-width: 992px) {
+      #athletes-hero h1 {
+        width: 30%; } }
+
+#athletes-info section {
+  background-color: #F1F1F1;
+  padding: 40px 30px; }
+  @media (min-width: 768px) {
+    #athletes-info section {
+      padding: 50px;
+      margin: 50px; } }
+  @media (min-width: 992px) {
+    #athletes-info section {
+      padding: 50px;
+      margin: 50px;
+      width: 63%; } }
+  #athletes-info section p {
+    color: #000;
+    font-family: 'Raleway';
+    font-size: 1rem; }
+    @media (min-width: 768px) {
+      #athletes-info section p {
+        font-size: 1.625rem; } }
+  #athletes-info section h3 {
+    color: #EC320D;
+    font-weight: 700;
+    padding: 10px 0px; }
+    @media (min-width: 768px) {
+      #athletes-info section h3 {
+        font-size: 2.375rem; } }
+
+#athletes-who {
+  background-color: #1D86CA; }
+  #athletes-who h2 {
+    color: #8CD2FF;
+    font-family: 'Barlow';
+    font-weight: 800;
+    font-size: 3.75rem;
+    line-height: .9;
+    padding: 30px 30px 0 30px; }
+  #athletes-who article {
+    position: relative;
+    height: 50vh; }
+    #athletes-who article #athletes-circleguy {
+      height: 150px;
+      position: absolute;
+      right: 30px; }
+    #athletes-who article h3 {
+      font-family: 'Barlow';
+      font-weight: 800;
+      font-size: 3.75rem;
+      z-index: 10;
+      color: #EAF7FF;
+      position: absolute;
+      top: 30%;
+      left: 38%; }
+    #athletes-who article #athletes-circlecar {
+      height: 200px;
+      position: absolute;
+      left: -30px;
+      bottom: 30px; }
+    #athletes-who article h2 {
+      font-family: 'Barlow';
+      font-weight: 800;
+      font-size: 12.5rem;
+      z-index: 10;
+      color: #EAF7FF;
+      position: absolute;
+      bottom: 0;
+      right: 0px; }
+  #athletes-who section h3 {
+    font-weight: 700;
+    font-size: 1.625rem;
+    color: #EAF7FF;
+    padding: 30px 30px 10px 30px; }
+  #athletes-who section p {
+    color: #EAF7FF;
+    padding: 0px 30px 40px 30px; }

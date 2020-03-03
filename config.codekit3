@@ -4,7 +4,7 @@
 	{
 		"name": "Process All Remaining Files and Folders",
 		"stepType": 1,
-		"uuidString": "2B4E40F1-53E3-48D5-AFA0-6FCE76E917DA"
+		"uuidString": "ABAED7E3-8FEB-49CD-931C-DEAC214E08D9"
 		}
 	],
 "creatorBuild": "31934",
@@ -22,10 +22,54 @@
 		"bl": 0,
 		"ft": 16,
 		"ma": 0,
-		"oA": 0,
+		"oA": 1,
 		"oAP": "/deploy/css/styles-min.css",
 		"oF": 0,
 		"oS": 3
+		},
+	"/deploy/img/athletes/athletes-car.jpg": {
+		"ft": 16384,
+		"iS": 201665,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/deploy/img/athletes/athletes-car.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/deploy/img/athletes/athletes-circlecar.png": {
+		"ft": 32768,
+		"iS": 114613,
+		"oA": 0,
+		"oAP": "/deploy/img/athletes/athletes-circlecar.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"/deploy/img/athletes/athletes-circleguy.png": {
+		"ft": 32768,
+		"iS": 126035,
+		"oA": 0,
+		"oAP": "/deploy/img/athletes/athletes-circleguy.png",
+		"oF": 0,
+		"oIPL": 1,
+		"opt": 1,
+		"oT": 1,
+		"q": 100
+		},
+	"/deploy/img/athletes/athletes-hero.jpg": {
+		"ft": 16384,
+		"iS": 818644,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/deploy/img/athletes/athletes-hero.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 1,
+		"q": 100
 		},
 	"/deploy/img/footer/facebook.svg": {
 		"ft": 2097152,
@@ -90,7 +134,7 @@
 		"ft": 64,
 		"ma": 0,
 		"mi": 1,
-		"oA": 0,
+		"oA": 1,
 		"oAP": "/deploy/js/DrawSVGPlugin.min-min.js",
 		"oF": 0,
 		"sC": 3,
@@ -101,7 +145,7 @@
 		"ft": 64,
 		"ma": 0,
 		"mi": 1,
-		"oA": 0,
+		"oA": 1,
 		"oAP": "/deploy/js/scripts-min-min.js",
 		"oF": 0,
 		"sC": 3,
@@ -123,13 +167,37 @@
 		"oAP": "/deploy/testimony.html",
 		"oF": 0
 		},
+	"/dev/athletes/athletes-hero.kit": {
+		"cB": 0,
+		"ft": 2048,
+		"hM": 0,
+		"oA": 1,
+		"oAP": "/dev/athletes/athletes-hero.html",
+		"oF": 0
+		},
+	"/dev/athletes/athletes-info.kit": {
+		"cB": 0,
+		"ft": 2048,
+		"hM": 0,
+		"oA": 1,
+		"oAP": "/dev/athletes/athletes-info.html",
+		"oF": 0
+		},
+	"/dev/athletes/athletes-who.kit": {
+		"cB": 0,
+		"ft": 2048,
+		"hM": 0,
+		"oA": 1,
+		"oAP": "/dev/athletes/athletes-who.html",
+		"oF": 0
+		},
 	"/dev/athletes/athletes.kit": {
 		"cB": 0,
 		"ft": 2048,
 		"hM": 0,
 		"oA": 0,
 		"oAP": "/deploy/athletes.html",
-		"oF": 2
+		"oF": 3
 		},
 	"/dev/footer.kit": {
 		"cB": 0,
@@ -151,7 +219,7 @@
 		"cB": 0,
 		"ft": 2048,
 		"hM": 0,
-		"oA": 0,
+		"oA": 1,
 		"oAP": "/deploy/index.html",
 		"oF": 2
 		},
@@ -215,7 +283,7 @@
 		"ft": 64,
 		"ma": 0,
 		"mi": 1,
-		"oA": 0,
+		"oA": 1,
 		"oAP": "/deploy/js/scripts-min.js",
 		"oF": 2,
 		"sC": 3,
@@ -228,6 +296,45 @@
 		"oA": 1,
 		"oAP": "/dev/navigation.html",
 		"oF": 0
+		},
+	"/dev/scss/athletes/_athletes-hero.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "/dev/scss/athletes/_athletes-hero.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
+	"/dev/scss/athletes/_athletes-info.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "/dev/scss/athletes/_athletes-info.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
+	"/dev/scss/athletes/_athletes-who.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "/dev/scss/athletes/_athletes-who.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
 		},
 	"/dev/scss/base/_base.scss": {
 		"aP": 0,
@@ -368,7 +475,7 @@
 		"ma": 0,
 		"oA": 0,
 		"oAP": "/deploy/css/styles.css",
-		"oF": 2,
+		"oF": 3,
 		"oS": 0,
 		"uL": 1
 		},
@@ -376,7 +483,7 @@
 		"cB": 0,
 		"ft": 2048,
 		"hM": 0,
-		"oA": 0,
+		"oA": 1,
 		"oAP": "/deploy/sponsors.html",
 		"oF": 2
 		},
@@ -384,7 +491,7 @@
 		"cB": 0,
 		"ft": 2048,
 		"hM": 0,
-		"oA": 0,
+		"oA": 1,
 		"oAP": "/deploy/testimony.html",
 		"oF": 2
 		},
