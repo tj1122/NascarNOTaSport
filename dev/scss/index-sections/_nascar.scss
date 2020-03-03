@@ -1,0 +1,42 @@
+/* =============
+    Index - NASCAR
+============= */
+
+#nascar{
+    background-color: $blue-light;
+    padding-top: 68px;
+    >div{
+        aside{
+            width: 100vw;
+            height:15%;
+            background-color: $purple-dark;
+
+            h2{
+                color:$blue;
+                padding: 30px;
+            }
+        }
+        img{
+            width: 100vw;
+        }
+        article{
+            display:grid;
+            grid-template-columns: 20px 10% auto 15% 20px;
+            grid-template-areas: ". content1 content1 . ." ". . content2 content2 .";
+            h2{
+                color:$purple;
+                padding: 30px 0;
+            }
+
+            h2:nth-child(1){
+                grid-area:content1;
+                padding-bottom:0;
+            }
+            h2:nth-child(2){
+                grid-area:content2;
+                padding:20px 0 0 0;
+
+            }
+        }
+    }
+}

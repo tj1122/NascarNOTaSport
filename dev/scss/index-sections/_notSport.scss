@@ -1,0 +1,45 @@
+/* =============
+    Not a Sport
+============= */
+#notSport{
+    background-color: $blue-dark;
+    padding-top:0;
+    margin-top:40px;
+    >div{
+        >article{
+            background-image: url("../../deploy/img/index/page1_hero2.jpg");
+            height:60vh;
+            width: 100%;
+            background-position: 90%;
+
+            div{
+                height:60vh;
+                width: 100%;
+                background-color: $blue-dark;
+                mix-blend-mode:color;
+            }
+        }
+        >section{
+            padding: 40px 30px;
+            padding-bottom:0;
+            h1{
+                text-align: center;
+                font-weight: 800;
+                font-size: rem-calc(35);
+                color:$blue;
+                padding: 0 20% 0;
+            }
+            h3{
+                font-weight: 600;
+                color:$blue-light;
+                padding-top: 20px;
+            }
+            ul{
+                li{
+                    color:$blue;
+                    padding-top: 20px;
+                }
+            }
+        }
+    }
+}

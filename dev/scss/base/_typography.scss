@@ -9,6 +9,21 @@ h1 {
   font-family: 'Barlow',;
 }
 
+h2 {
+  font-family: 'Barlow';
+  font-weight: 600;
+  font-size: rem-calc(16);
+}
+
+h3 {
+  font-family: 'Barlow';
+  font-size: rem-calc(16);
+
+  @include md{
+      font-size:  rem-calc(26);
+  }
+}
+
 h1,
 h2,
 h3,

@@ -340,6 +340,18 @@ body {
 h1 {
   font-family: "Barlow"; }
 
+h2 {
+  font-family: 'Barlow';
+  font-weight: 600;
+  font-size: 1rem; }
+
+h3 {
+  font-family: 'Barlow';
+  font-size: 1rem; }
+  @media (min-width: 768px) {
+    h3 {
+      font-size: 1.625rem; } }
+
 h1,
 h2,
 h3,
@@ -440,25 +452,86 @@ header {
 /* =============
     Footer
 ============= */
-footer {
-  padding-top: 67px; }
-  footer > div {
-    padding: 20px 0px;
+footer > div {
+  padding: 20px 0px;
+  display: grid;
+  grid-template-columns: 20px auto auto 20px;
+  grid-template-areas: ". logo socials .";
+  background-color: #323232; }
+  @media (min-width: 768px) {
+    footer > div {
+      text-align: center; } }
+  footer > div img {
+    grid-area: logo;
+    display: flex;
+    align-self: center; }
+  footer > div ul {
+    grid-area: socials;
+    display: flex;
+    justify-content: flex-end; }
+    footer > div ul li {
+      margin-left: 14px;
+      cursor: pointer; }
+
+/* =============
+    Index - NASCAR
+============= */
+#nascar {
+  background-color: #EAF7FF;
+  padding-top: 68px; }
+  #nascar > div aside {
+    width: 100vw;
+    height: 15%;
+    background-color: #0C153C; }
+    #nascar > div aside h2 {
+      color: #8CD2FF;
+      padding: 30px; }
+  #nascar > div img {
+    width: 100vw; }
+  #nascar > div article {
     display: grid;
-    grid-template-columns: 20px auto auto 20px;
-    grid-template-areas: ". logo socials .";
-    background-color: #323232; }
-    @media (min-width: 768px) {
-      footer > div {
-        text-align: center; } }
-    footer > div img {
-      grid-area: logo;
-      display: flex;
-      align-self: center; }
-    footer > div ul {
-      grid-area: socials;
-      display: flex;
-      justify-content: flex-end; }
-      footer > div ul li {
-        margin-left: 14px;
-        cursor: pointer; }
+    grid-template-columns: 20px 10% auto 15% 20px;
+    grid-template-areas: ". content1 content1 . ." ". . content2 content2 ."; }
+    #nascar > div article h2 {
+      color: #1F2C66;
+      padding: 30px 0; }
+    #nascar > div article h2:nth-child(1) {
+      grid-area: content1;
+      padding-bottom: 0; }
+    #nascar > div article h2:nth-child(2) {
+      grid-area: content2;
+      padding: 20px 0 0 0; }
+
+/* =============
+    Not a Sport
+============= */
+#notSport {
+  background-color: #1D86CA;
+  padding-top: 0;
+  margin-top: 40px; }
+  #notSport > div > article {
+    background-image: url("../../deploy/img/index/page1_hero2.jpg");
+    height: 60vh;
+    width: 100%;
+    background-position: 90%; }
+    #notSport > div > article div {
+      height: 60vh;
+      width: 100%;
+      background-color: #1D86CA;
+      mix-blend-mode: color; }
+  #notSport > div > section {
+    padding: 40px 30px;
+    padding-bottom: 0; }
+    #notSport > div > section h1 {
+      text-align: center;
+      font-weight: 800;
+      font-size: 2.1875rem;
+      color: #8CD2FF;
+      padding: 0 20% 0; }
+    #notSport > div > section h3 {
+      font-weight: 600;
+      color: #EAF7FF;
+      padding-top: 20px; }
+    #notSport > div > section ul li {
+      color: #8CD2FF;
+      padding-top: 20px; }
