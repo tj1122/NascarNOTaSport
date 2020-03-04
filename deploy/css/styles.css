@@ -499,8 +499,58 @@ footer {
         #sponsors-hero .red-opacity h1 {
           font-size: 4.6875rem; } }
 
-#overwhelming > div {
-  background-color: #F1F1F1; }
-  #overwhelming > div h2 {
-    color: #EC320D;
-    font-size: 1.875rem; }
+#overwhelming {
+  position: relative; }
+  @media (min-width: 768px) {
+    #overwhelming {
+      padding-top: 130px; } }
+  #overwhelming > div {
+    background-color: #F1F1F1;
+    padding: 20px; }
+    @media (min-width: 768px) {
+      #overwhelming > div {
+        width: 513px;
+        height: 165px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 0px 0px 0px 20px;
+        position: absolute;
+        top: 30px;
+        margin-left: 30px; } }
+    #overwhelming > div h2 {
+      color: #EC320D;
+      font-size: 1.875rem; }
+      @media (min-width: 768px) {
+        #overwhelming > div h2 {
+          font-size: 2.375rem; } }
+    #overwhelming > div p:nth-child(2) {
+      font-size: 1.25rem; }
+      @media (min-width: 768px) {
+        #overwhelming > div p:nth-child(2) {
+          font-size: 1.625rem; } }
+    #overwhelming > div p:nth-child(3) {
+      font-size: 0.75rem; }
+      @media (min-width: 768px) {
+        #overwhelming > div p:nth-child(3) {
+          font-size: 1rem; } }
+  #overwhelming aside {
+    background-image: url("../img/sponsors/viagra.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 30vh; }
+    @media (min-width: 768px) {
+      #overwhelming aside {
+        background-size: contain;
+        background-position: 90% center; } }
+  #overwhelming #last-p {
+    text-align: center;
+    padding: 20px 40px;
+    font-size: 1.125rem; }
+    @media (min-width: 768px) {
+      #overwhelming #last-p {
+        padding: 20px 100px; } }
+    #overwhelming #last-p span {
+      color: #EC320D;
+      font-weight: 700; }
