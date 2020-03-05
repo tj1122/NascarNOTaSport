@@ -1,0 +1,69 @@
+#location{
+  background-color: $blue-dark;
+  padding: 20px 40px;
+  display: grid;
+  grid-template-areas: "title"
+                        "descrip"
+                        "lid"
+                        "trunk";
+  align-items: center;
+  grid-gap: 30px;
+  @include md{
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: .5fr .5fr;
+    grid-template-areas: "title descrip"
+                          "lid trunk";
+  }
+  @include lg{
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: "title lid"
+                          "descrip trunk";
+  }
+  h1{
+    font-size: rem-calc(60);
+    color: $blue;
+    grid-area: "title";
+  }
+  p:nth-child(2){
+    color: $blue-light;
+    grid-area: "descrip";
+  }
+  div{
+    color: $blue-light;
+    grid-area: "lid";
+    justify-self: center;
+    padding-left: 20px;
+    @include md{
+      padding-left: 0px;
+      justify-self: center;
+    }
+    img{
+      margin: -23px 0px 0px 40px;
+    }
+    p:nth-child(3){
+      font-size: rem-calc(22);
+    }
+  }
+  aside{
+    color: $blue-light;
+    grid-area: "trunk";
+    padding-left: 20px;
+    @include md{
+      padding-left: 0px;
+      justify-self: center;
+    }
+    img{
+      margin: -23px 0px 0px 50px;
+    }
+    h2{
+      font-size: rem-calc(22);
+    }
+    h3{
+      font-size: rem-calc(35);
+    }
+    p:nth-child(3){
+      font-size: rem-calc(22);
+    }
+  }
+}

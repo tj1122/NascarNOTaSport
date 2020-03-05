@@ -1,59 +1,54 @@
-#overwhelming{
+#brand{
   position: relative;
-  @include md{
-    padding-top: 50px;
-  }
   >div{
-    background-color: $gray-light;
-    padding: 20px;
+    background-color: $purple-dark;
+    padding: 20px 40px;
     @include md{
-      width: 513px;
-      height: 165px;
+      width: 420px;
+      height: 193px;
       display: flex;
       flex-direction: column;
       justify-content: center;
-      padding: 0px 0px 0px 20px;
+      padding: 0px 0px 0px 30px;
       position: absolute;
-      top: 70px;
-      margin-left: 30px;
+      top: 0px;
     }
     h2{
-      color: $red;
-      font-size: rem-calc(30);
+      color: $blue;
+      font-size: rem-calc(35);
       @include md{
         font-size: rem-calc(38);
       }
     }
     p:nth-child(2){
-      font-size: rem-calc(20);
+      color: $blue;
+      font-size: rem-calc(16);
       @include md{
         font-size: rem-calc(26);
-      }
-    }
-    p:nth-child(3){
-      font-size: rem-calc(12);
-      @include md{
-        font-size: rem-calc(16);
+        padding-right: 30px;
       }
     }
   }
   aside{
-    background-image: url("../img/sponsors/viagra.jpg");
+    background-image: url("../img/sponsors/dodge.jpg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     height: 30vh;
     @include md{
       background-size: contain;
-      background-position: 90% center;
+      background-position: 100% center;
     }
   }
-  #last-p{
+  h1{
     text-align: center;
     padding: 20px 40px;
-    font-size: rem-calc(18);
+    font-size: rem-calc(30);
+    color: $blue;
+    background-color: $purple-dark;
     @include md{
-      padding: 20px 100px;
+      padding: 20px 20px;
+      font-size: rem-calc(37);
     }
     @include lg{
       padding: 40px 250px;

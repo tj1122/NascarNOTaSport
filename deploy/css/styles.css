@@ -503,7 +503,7 @@ footer {
   position: relative; }
   @media (min-width: 768px) {
     #overwhelming {
-      padding-top: 130px; } }
+      padding-top: 50px; } }
   #overwhelming > div {
     background-color: #F1F1F1;
     padding: 20px; }
@@ -516,7 +516,7 @@ footer {
         justify-content: center;
         padding: 0px 0px 0px 20px;
         position: absolute;
-        top: 30px;
+        top: 70px;
         margin-left: 30px; } }
     #overwhelming > div h2 {
       color: #EC320D;
@@ -551,6 +551,118 @@ footer {
     @media (min-width: 768px) {
       #overwhelming #last-p {
         padding: 20px 100px; } }
+    @media (min-width: 992px) {
+      #overwhelming #last-p {
+        padding: 40px 250px; } }
     #overwhelming #last-p span {
+      color: #EC320D;
+      font-weight: 700; }
+
+#location {
+  background-color: #1D86CA;
+  padding: 20px 40px;
+  display: grid;
+  grid-template-areas: "title" "descrip" "lid" "trunk";
+  align-items: center;
+  grid-gap: 30px; }
+  @media (min-width: 768px) {
+    #location {
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: .5fr .5fr;
+      grid-template-areas: "title descrip" "lid trunk"; } }
+  @media (min-width: 992px) {
+    #location {
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: 1fr 1fr;
+      grid-template-areas: "title lid" "descrip trunk"; } }
+  #location h1 {
+    font-size: 3.75rem;
+    color: #8CD2FF;
+    grid-area: "title"; }
+  #location p:nth-child(2) {
+    color: #EAF7FF;
+    grid-area: "descrip"; }
+  #location div {
+    color: #EAF7FF;
+    grid-area: "lid";
+    justify-self: center;
+    padding-left: 20px; }
+    @media (min-width: 768px) {
+      #location div {
+        padding-left: 0px;
+        justify-self: center; } }
+    #location div img {
+      margin: -23px 0px 0px 40px; }
+    #location div p:nth-child(3) {
+      font-size: 1.375rem; }
+  #location aside {
+    color: #EAF7FF;
+    grid-area: "trunk";
+    padding-left: 20px; }
+    @media (min-width: 768px) {
+      #location aside {
+        padding-left: 0px;
+        justify-self: center; } }
+    #location aside img {
+      margin: -23px 0px 0px 50px; }
+    #location aside h2 {
+      font-size: 1.375rem; }
+    #location aside h3 {
+      font-size: 2.1875rem; }
+    #location aside p:nth-child(3) {
+      font-size: 1.375rem; }
+
+#brand {
+  position: relative; }
+  #brand > div {
+    background-color: #0C153C;
+    padding: 20px 40px; }
+    @media (min-width: 768px) {
+      #brand > div {
+        width: 420px;
+        height: 193px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 0px 0px 0px 30px;
+        position: absolute;
+        top: 0px; } }
+    #brand > div h2 {
+      color: #8CD2FF;
+      font-size: 2.1875rem; }
+      @media (min-width: 768px) {
+        #brand > div h2 {
+          font-size: 2.375rem; } }
+    #brand > div p:nth-child(2) {
+      color: #8CD2FF;
+      font-size: 1rem; }
+      @media (min-width: 768px) {
+        #brand > div p:nth-child(2) {
+          font-size: 1.625rem;
+          padding-right: 30px; } }
+  #brand aside {
+    background-image: url("../img/sponsors/dodge.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 30vh; }
+    @media (min-width: 768px) {
+      #brand aside {
+        background-size: contain;
+        background-position: 100% center; } }
+  #brand h1 {
+    text-align: center;
+    padding: 20px 40px;
+    font-size: 1.875rem;
+    color: #8CD2FF;
+    background-color: #0C153C; }
+    @media (min-width: 768px) {
+      #brand h1 {
+        padding: 20px 20px;
+        font-size: 2.3125rem; } }
+    @media (min-width: 992px) {
+      #brand h1 {
+        padding: 40px 250px; } }
+    #brand h1 span {
       color: #EC320D;
       font-weight: 700; }
