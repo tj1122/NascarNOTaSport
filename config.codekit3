@@ -441,6 +441,19 @@
 		"oS": 0,
 		"uL": 1
 		},
+	"/dev/scss/index-sections/_index-hero.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "/dev/scss/index-sections/_index-hero.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
 	"/dev/scss/index-sections/_nascar.scss": {
 		"aP": 0,
 		"bl": 0,

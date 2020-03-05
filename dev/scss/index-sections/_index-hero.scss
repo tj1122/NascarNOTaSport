@@ -1,0 +1,45 @@
+/* =============
+    Requirements
+============= */
+#index-hero{
+    padding-top: 68px;
+    >div{
+        article{
+            iframe{
+                width: 100%;
+                height:50vh;
+            }
+            div{
+                grid-area:bg-red;
+                height: 50vh;
+                width: 60%;
+                background-color: rgba(164,27,0,0.7);
+                position: absolute;
+                top:68px;
+                left:0;
+                display:flex;
+                align-items: center;
+                h1{
+                    color:$white;
+                    font-weight: 800;
+                    font-size: rem-calc(35);
+                }
+            }
+        }
+        section{
+            div{
+                background-color: $gray-light;
+                margin:30px 20px 0;
+                padding: 20px;
+                p{
+                    font-style: italic;
+                    span{
+                        color:$red;
+                        font-weight: 600;
+                        font-style: normal;
+                    }
+                }
+            }
+        }
+    }
+}

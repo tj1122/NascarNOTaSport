@@ -483,11 +483,44 @@ footer > div {
       cursor: pointer; }
 
 /* =============
+    Requirements
+============= */
+#index-hero {
+  padding-top: 68px; }
+  #index-hero > div article iframe {
+    width: 100%;
+    height: 50vh; }
+  #index-hero > div article div {
+    grid-area: bg-red;
+    height: 50vh;
+    width: 60%;
+    background-color: rgba(164, 27, 0, 0.7);
+    position: absolute;
+    top: 68px;
+    left: 0;
+    display: flex;
+    align-items: center; }
+    #index-hero > div article div h1 {
+      color: #fff;
+      font-weight: 800;
+      font-size: 2.1875rem; }
+  #index-hero > div section div {
+    background-color: #F1F1F1;
+    margin: 30px 20px 0;
+    padding: 20px; }
+    #index-hero > div section div p {
+      font-style: italic; }
+      #index-hero > div section div p span {
+        color: #EC320D;
+        font-weight: 600;
+        font-style: normal; }
+
+/* =============
     Index - NASCAR
 ============= */
 #nascar {
   background-color: #EAF7FF;
-  padding-top: 68px; }
+  padding-top: 0; }
   #nascar > div aside {
     width: 100vw;
     height: 15%;
