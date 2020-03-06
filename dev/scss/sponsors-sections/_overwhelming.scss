@@ -1,7 +1,7 @@
 #overwhelming{
   position: relative;
   @include md{
-    padding-top: 50px;
+    padding-top: 120px;
   }
   >div{
     background-color: $gray-light;
@@ -14,7 +14,7 @@
       justify-content: center;
       padding: 0px 0px 0px 20px;
       position: absolute;
-      top: 70px;
+      top: 30px;
       margin-left: 30px;
     }
     h2{
