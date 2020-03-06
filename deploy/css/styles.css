@@ -497,19 +497,31 @@ footer > div {
     background-color: rgba(164, 27, 0, 0.7);
     position: absolute;
     top: 68px;
-    left: 0;
-    display: flex;
-    align-items: center; }
+    left: 0; }
     #index-hero > div article div h1 {
       color: #fff;
       font-weight: 800;
-      font-size: 2.1875rem; }
+      font-size: 2.1875rem;
+      margin-top: 40px;
+      margin-left: 20px; }
+      @media (min-width: 768px) {
+        #index-hero > div article div h1 {
+          font-size: 4.6875rem; } }
+    #index-hero > div article div h1:nth-child(2) {
+      margin-top: 0; }
   #index-hero > div section div {
     background-color: #F1F1F1;
     margin: 30px 20px 0;
     padding: 20px; }
+    @media (min-width: 768px) {
+      #index-hero > div section div {
+        margin: 50px 50px 0;
+        padding: 30px; } }
     #index-hero > div section div p {
       font-style: italic; }
+      @media (min-width: 768px) {
+        #index-hero > div section div p {
+          font-size: 1.625rem; } }
       #index-hero > div section div p span {
         color: #EC320D;
         font-weight: 600;
@@ -521,22 +533,74 @@ footer > div {
 #nascar {
   background-color: #EAF7FF;
   padding-top: 0; }
+  @media (min-width: 768px) {
+    #nascar > div {
+      position: relative;
+      height: 62vh; } }
+  @media (min-width: 992px) {
+    #nascar > div {
+      height: 64vh; } }
   #nascar > div aside {
     width: 100vw;
     height: 15%;
     background-color: #0C153C; }
+    @media (min-width: 768px) {
+      #nascar > div aside {
+        position: absolute;
+        width: 45vw;
+        height: 28vh;
+        z-index: 5;
+        top: 20vh;
+        right: 50px; } }
+    @media (min-width: 992px) {
+      #nascar > div aside {
+        width: 45vw;
+        height: 20vh;
+        z-index: 5;
+        top: 25vh;
+        right: 50px; } }
     #nascar > div aside h2 {
       color: #8CD2FF;
       padding: 30px; }
+      @media (min-width: 768px) {
+        #nascar > div aside h2 {
+          font-size: 1.625rem;
+          padding-top: 5vh; } }
   #nascar > div img {
     width: 100vw; }
+    @media (min-width: 768px) {
+      #nascar > div img {
+        position: absolute;
+        width: 55vw;
+        top: 50px;
+        left: 50px; } }
+    @media (min-width: 992px) {
+      #nascar > div img {
+        width: 60vw;
+        top: 50px;
+        left: 50px; } }
   #nascar > div article {
     display: grid;
     grid-template-columns: 20px 10% auto 15% 20px;
     grid-template-areas: ". content1 content1 . ." ". . content2 content2 ."; }
+    @media (min-width: 768px) {
+      #nascar > div article {
+        grid-template-columns: 30px 40% auto 35%;
+        grid-template-areas: ". content1 . ." ". content2 content2 .";
+        position: absolute;
+        top: 36vh; } }
+    @media (min-width: 992px) {
+      #nascar > div article {
+        grid-template-columns: 65px 50% auto;
+        grid-template-areas: ". content1 . " ". content2 .";
+        position: absolute;
+        top: 45vh; } }
     #nascar > div article h2 {
       color: #1F2C66;
       padding: 30px 0; }
+      @media (min-width: 768px) {
+        #nascar > div article h2 {
+          font-size: 1.625rem; } }
     #nascar > div article h2:nth-child(1) {
       grid-area: content1;
       padding-bottom: 0; }
@@ -551,33 +615,68 @@ footer > div {
   background-color: #1D86CA;
   padding-top: 0;
   margin-top: 40px; }
+  @media (min-width: 768px) {
+    #notSport {
+      padding-bottom: 0; } }
+  @media (min-width: 768px) {
+    #notSport > div {
+      display: grid;
+      grid-template-columns: 40% 50px auto 50px;
+      grid-template-areas: "image . content ."; } }
   #notSport > div > article {
     background-image: url("../../deploy/img/index/page1_hero2.jpg");
     height: 60vh;
     width: 100%;
     background-position: 90%;
     background-repeat: no-repeat; }
+    @media (min-width: 768px) {
+      #notSport > div > article {
+        grid-area: image; } }
+    @media (min-width: 992px) {
+      #notSport > div > article {
+        height: 50vh; } }
     #notSport > div > article div {
       height: 60vh;
       width: 100%;
       background-color: #1D86CA;
       mix-blend-mode: color; }
+      @media (min-width: 992px) {
+        #notSport > div > article div {
+          height: 50vh; } }
   #notSport > div > section {
     padding: 40px 30px;
     padding-bottom: 0; }
+    @media (min-width: 768px) {
+      #notSport > div > section {
+        grid-area: content;
+        margin: 50px 0 0; } }
+    @media (min-width: 992px) {
+      #notSport > div > section {
+        padding: 0; } }
     #notSport > div > section h1 {
       text-align: center;
       font-weight: 800;
       font-size: 2.1875rem;
       color: #8CD2FF;
       padding: 0 20% 0; }
+      @media (min-width: 768px) {
+        #notSport > div > section h1 {
+          text-align: left;
+          padding-left: 0;
+          padding-right: 25%; } }
     #notSport > div > section h3 {
       font-weight: 600;
       color: #EAF7FF;
       padding-top: 20px; }
+      @media (min-width: 768px) {
+        #notSport > div > section h3 {
+          font-size: 1rem; } }
     #notSport > div > section ul li {
       color: #8CD2FF;
       padding-top: 20px; }
+      @media (min-width: 768px) {
+        #notSport > div > section ul li {
+          font-size: 1.25rem; } }
 
 /* =============
     Requirements

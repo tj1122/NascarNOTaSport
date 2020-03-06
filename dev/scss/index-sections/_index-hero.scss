@@ -17,12 +17,18 @@
                 position: absolute;
                 top:68px;
                 left:0;
-                display:flex;
-                align-items: center;
                 h1{
                     color:$white;
                     font-weight: 800;
                     font-size: rem-calc(35);
+                    margin-top: 40px;
+                    margin-left: 20px;
+                    @include md{
+                        font-size: rem-calc(75);
+                    }
+                }
+                h1:nth-child(2){
+                    margin-top: 0;
                 }
             }
         }
@@ -31,8 +37,17 @@
                 background-color: $gray-light;
                 margin:30px 20px 0;
                 padding: 20px;
+
+                @include md{
+                    margin: 50px 50px 0;
+                    padding: 30px;
+                }
                 p{
                     font-style: italic;
+
+                    @include md{
+                        font-size: rem-calc(26);
+                    }
                     span{
                         color:$red;
                         font-weight: 600;

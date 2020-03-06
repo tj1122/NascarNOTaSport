@@ -5,7 +5,17 @@
     background-color: $blue-dark;
     padding-top:0;
     margin-top:40px;
+
+    @include md{
+        padding-bottom:0;
+    }
     >div{
+
+        @include md{
+            display: grid;
+            grid-template-columns:40% 50px auto 50px;
+            grid-template-areas:"image . content .";
+        }
         >article{
             background-image: url("../../deploy/img/index/page1_hero2.jpg");
             height:60vh;
@@ -13,32 +23,65 @@
             background-position: 90%;
             background-repeat: no-repeat;
 
+            @include md{
+                grid-area: image;
+            }
+            @include lg{
+                height:50vh;
+            }
+
             div{
                 height:60vh;
                 width: 100%;
                 background-color: $blue-dark;
                 mix-blend-mode:color;
+
+                @include lg{
+                    height:50vh;
+                }
             }
         }
         >section{
             padding: 40px 30px;
             padding-bottom:0;
+
+            @include md{
+                grid-area: content;
+                margin: 50px 0 0;
+            }
+            @include lg{
+                // margin: 50px 0 0;
+                padding: 0;
+            }
             h1{
                 text-align: center;
                 font-weight: 800;
                 font-size: rem-calc(35);
                 color:$blue;
                 padding: 0 20% 0;
+
+                @include md{
+                    text-align: left;
+                    padding-left: 0;
+                    padding-right: 25%;
+                }
             }
             h3{
                 font-weight: 600;
                 color:$blue-light;
                 padding-top: 20px;
+                @include md{
+                    font-size: rem-calc(16);
+                }
             }
             ul{
                 li{
                     color:$blue;
                     padding-top: 20px;
+
+                    @include md{
+                        font-size: rem-calc(20);
+                    }
                 }
             }
         }

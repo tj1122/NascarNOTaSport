@@ -6,26 +6,86 @@
     background-color: $blue-light;
     padding-top:0;
     >div{
+
+        @include md{
+            position: relative;
+            height: 62vh;
+        }
+        @include lg{
+            height: 64vh;
+        }
         aside{
             width: 100vw;
             height:15%;
             background-color: $purple-dark;
 
+            @include md{
+                position: absolute;
+                width: 45vw;
+                height:28vh;
+                z-index: 5;
+                top: 20vh;
+                right:50px;
+            }
+
+            @include lg{
+                width: 45vw;
+                height:20vh;
+                z-index: 5;
+                top: 25vh;
+                right:50px;
+            }
+
             h2{
                 color:$blue;
                 padding: 30px;
+
+                @include md{
+                    font-size: rem-calc(26);
+                    padding-top: 5vh;
+                }
             }
         }
         img{
             width: 100vw;
+
+            @include md{
+                position:absolute;
+                width: 55vw;
+                top: 50px;
+                left:50px;
+            }
+
+            @include lg{
+                width: 60vw;
+                top: 50px;
+                left:50px;
+            }
         }
         article{
             display:grid;
             grid-template-columns: 20px 10% auto 15% 20px;
             grid-template-areas: ". content1 content1 . ." ". . content2 content2 .";
+
+            @include md{
+                grid-template-columns: 30px 40% auto 35%;
+                grid-template-areas: ". content1 . ." ". content2 content2 .";
+                position: absolute;
+                top: 36vh;
+            }
+            @include lg{
+                grid-template-columns: 65px 50% auto;
+                grid-template-areas: ". content1 . " ". content2 .";
+                position: absolute;
+                top: 45vh;
+            }
             h2{
                 color:$purple;
                 padding: 30px 0;
+
+                @include md{
+                    font-size:rem-calc(26);
+                }
             }
 
             h2:nth-child(1){
@@ -35,7 +95,6 @@
             h2:nth-child(2){
                 grid-area:content2;
                 padding:20px 0 0 0;
-
             }
         }
     }
