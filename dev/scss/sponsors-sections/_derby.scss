@@ -1,0 +1,45 @@
+#derby{
+  @include lg{
+    padding: 40px 63px 40px 63px;
+  }
+  div:nth-child(1){
+    @include lg{
+      padding-right: 60px;
+    }
+    aside{
+      background-color: $purple;
+    }
+  }
+  div:nth-child(2){
+    background-image: url("../img/sponsors/derby.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    z-index: -1;
+    position: relative;
+    height: 30vh;
+    @include lg{
+      margin-top: -30px;
+    }
+  }
+  div:nth-child(3){
+    @include lg{
+      margin-top: -30px;
+      padding-left: 60px;
+    }
+    aside{
+      background-color: $purple;
+    }
+  }
+  h1{
+    color: $blue;
+    font-size: rem-calc(16);
+    padding: 20px 0px 20px 0px;
+    text-align: center;
+    display: grid;
+
+    @include md{
+      font-size: rem-calc(36);
+    }
+  }
+}

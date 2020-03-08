@@ -129,6 +129,49 @@
 		"plM": 52780316221407,
 		"prP": 0
 		},
+	"/deploy/img/sponsors/coke.jpg": {
+		"ft": 16384,
+		"iS": 852820,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/deploy/img/sponsors/coke.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/deploy/img/sponsors/corporations.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "/deploy/img/sponsors/corporations.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 52780316221407,
+		"prP": 0
+		},
+	"/deploy/img/sponsors/derby.jpg": {
+		"ft": 16384,
+		"iS": 309234,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/deploy/img/sponsors/derby.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/deploy/img/sponsors/dodge.jpg": {
+		"ft": 16384,
+		"iS": 183102,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/deploy/img/sponsors/dodge.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
 	"/deploy/img/sponsors/hero.jpg": {
 		"ft": 16384,
 		"iS": 605192,
@@ -138,6 +181,61 @@
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 1,
+		"q": 100
+		},
+	"/deploy/img/sponsors/hood.png": {
+		"ft": 32768,
+		"iS": 82391,
+		"oA": 0,
+		"oAP": "/deploy/img/sponsors/hood.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"/deploy/img/sponsors/monster.jpg": {
+		"ft": 16384,
+		"iS": 180271,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/deploy/img/sponsors/monster.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/deploy/img/sponsors/trunk.png": {
+		"ft": 32768,
+		"iS": 57762,
+		"oA": 0,
+		"oAP": "/deploy/img/sponsors/trunk.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"/deploy/img/sponsors/viagra.jpg": {
+		"ft": 16384,
+		"iS": 206770,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/deploy/img/sponsors/viagra.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/deploy/img/sponsors/xfinity.jpg": {
+		"ft": 16384,
+		"iS": 237979,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/deploy/img/sponsors/xfinity.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
 		"q": 100
 		},
 	"/deploy/index.html": {
@@ -506,6 +604,45 @@
 		"oS": 0,
 		"uL": 1
 		},
+	"/dev/scss/sponsors-sections/_brand.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "/dev/scss/sponsors-sections/_brand.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
+	"/dev/scss/sponsors-sections/_coke.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "/dev/scss/sponsors-sections/_coke.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
+	"/dev/scss/sponsors-sections/_derby.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "/dev/scss/sponsors-sections/_derby.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
 	"/dev/scss/sponsors-sections/_hero.scss": {
 		"aP": 0,
 		"bl": 0,
@@ -519,6 +656,19 @@
 		"oS": 0,
 		"uL": 1
 		},
+	"/dev/scss/sponsors-sections/_location.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "/dev/scss/sponsors-sections/_location.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
 	"/dev/scss/sponsors-sections/_overwhelming.scss": {
 		"aP": 0,
 		"bl": 0,
@@ -528,6 +678,32 @@
 		"ma": 0,
 		"oA": 1,
 		"oAP": "/dev/scss/sponsors-sections/_overwhelming.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
+	"/dev/scss/sponsors-sections/_series.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "/dev/scss/sponsors-sections/_series.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
+	"/dev/scss/sponsors-sections/_viewers.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "/dev/scss/sponsors-sections/_viewers.css",
 		"oF": 0,
 		"oS": 0,
 		"uL": 1
