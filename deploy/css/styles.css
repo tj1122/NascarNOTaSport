@@ -462,7 +462,260 @@ footer {
       footer > div ul li {
         margin-left: 14px;
         cursor: pointer; }
+#athletes-hero {
+  background-image: url("../img/athletes/athletes-hero.jpg");
+  height: 400px;
+  background-position: 50% -70%;
+  background-size: cover;
+  display: flex;
+  align-items: center; }
+  @media (min-width: 768px) {
+    #athletes-hero {
+      height: 600px;
+      background-size: cover; } }
+  @media (min-width: 992px) {
+    #athletes-hero {
+      height: 800px;
+      background-position: center; } }
+  #athletes-hero h1 {
+    font-size: 1.875rem;
+    color: #fff;
+    font-weight: 800;
+    width: 40%;
+    padding-top: 30px;
+    padding-left: 30px;
+    line-height: .9; }
+    @media (min-width: 768px) {
+      #athletes-hero h1 {
+        padding-top: 0;
+        font-size: 4.375rem;
+        padding-left: 50px; } }
+    @media (min-width: 992px) {
+      #athletes-hero h1 {
+        width: 30%; } }
 
+#athletes-info section {
+  background-color: #F1F1F1;
+  padding: 40px 30px; }
+  @media (min-width: 768px) {
+    #athletes-info section {
+      padding: 50px;
+      margin: 50px; } }
+  @media (min-width: 992px) {
+    #athletes-info section {
+      width: 63%; } }
+  #athletes-info section p {
+    color: #000;
+    font-family: 'Raleway';
+    font-size: 1rem; }
+    @media (min-width: 768px) {
+      #athletes-info section p {
+        font-size: 1.625rem; } }
+  #athletes-info section h3 {
+    color: #EC320D;
+    font-weight: 700;
+    padding: 10px 0px; }
+    @media (min-width: 768px) {
+      #athletes-info section h3 {
+        font-size: 2.375rem; } }
+
+#athletes-who {
+  overflow: hidden;
+  background-color: #1D86CA; }
+  @media (min-width: 768px) {
+    #athletes-who {
+      display: grid;
+      grid-template-columns: 60% auto;
+      grid-template-areas: "athletesWhoTitle athletesWhoImgs" "athletesWhoPara athletesWhoImgs"; } }
+  @media (min-width: 992px) {
+    #athletes-who {
+      grid-template-columns: 35% auto;
+      grid-template-areas: "athletesWhoTitle athletesWhoImgs" "athletesWhoPara  athletesWhoImgs"; } }
+  #athletes-who h2 {
+    grid-area: athletesWhoTitle;
+    color: #8CD2FF;
+    font-family: 'Barlow';
+    font-weight: 800;
+    font-size: 3.75rem;
+    line-height: 0.9;
+    padding: 30px 30px 0; }
+    @media (min-width: 768px) {
+      #athletes-who h2 {
+        padding: 50px 50px 0; } }
+    @media (min-width: 992px) {
+      #athletes-who h2 {
+        width: 50%; } }
+  #athletes-who article {
+    grid-area: athletesWhoImgs;
+    position: relative;
+    height: 50vh; }
+    @media (min-width: 768px) {
+      #athletes-who article {
+        height: auto; } }
+    #athletes-who article #athletes-circleguy {
+      height: 150px;
+      position: absolute;
+      right: 30px; }
+      @media (min-width: 768px) {
+        #athletes-who article #athletes-circleguy {
+          right: 25vw;
+          top: 50px; } }
+      @media (min-width: 992px) {
+        #athletes-who article #athletes-circleguy {
+          height: 200px;
+          top: 8%;
+          right: auto;
+          left: 5%; } }
+    #athletes-who article h3 {
+      font-family: 'Barlow';
+      font-weight: 800;
+      font-size: 3.75rem;
+      z-index: 10;
+      color: #EAF7FF;
+      position: absolute;
+      top: 30%;
+      left: 38%; }
+      @media (min-width: 768px) {
+        #athletes-who article h3 {
+          top: 35%;
+          left: 25%; } }
+      @media (min-width: 992px) {
+        #athletes-who article h3 {
+          top: 35%;
+          left: 25%; } }
+    #athletes-who article #athletes-circlecar {
+      height: 200px;
+      position: absolute;
+      left: -30px;
+      bottom: 30px; }
+      @media (min-width: 768px) {
+        #athletes-who article #athletes-circlecar {
+          left: auto;
+          right: 5vw;
+          bottom: 50px; } }
+      @media (min-width: 992px) {
+        #athletes-who article #athletes-circlecar {
+          height: 350px;
+          right: auto;
+          left: 35%;
+          bottom: 5%; } }
+    #athletes-who article h2 {
+      overflow: hidden;
+      font-family: 'Barlow';
+      font-weight: 800;
+      font-size: 12.5rem;
+      z-index: 10;
+      color: #EAF7FF;
+      position: absolute;
+      bottom: 0;
+      right: 0; }
+      @media (min-width: 768px) {
+        #athletes-who article h2 {
+          bottom: 20px;
+          right: -65px; } }
+      @media (min-width: 992px) {
+        #athletes-who article h2 {
+          padding: 0;
+          right: auto;
+          left: 70%; } }
+  #athletes-who section {
+    grid-area: athletesWhoPara; }
+    #athletes-who section h3 {
+      font-weight: 700;
+      font-size: 1.625rem;
+      color: #EAF7FF;
+      padding: 30px 30px 5px; }
+      @media (min-width: 768px) {
+        #athletes-who section h3 {
+          padding: 30px 0px 5px 50px; } }
+    #athletes-who section p {
+      color: #EAF7FF;
+      padding: 0 30px 40px; }
+      @media (min-width: 768px) {
+        #athletes-who section p {
+          padding: 0px 0px 50px 50px; } }
+      @media (min-width: 992px) {
+        #athletes-who section p {
+          padding: 0px 50px 50px; } }
+
+@media (min-width: 768px) {
+  #athletes-conclusion section {
+    background-color: #EAF7FF;
+    padding: 50px 0px 100px;
+    position: relative;
+    display: grid;
+    grid-template-columns: 30% 70%;
+    grid-template-areas: "athleteconimg athleteconp"; } }
+
+@media (min-width: 992px) {
+  #athletes-conclusion section {
+    grid-template-columns: 40% 60%;
+    padding: 50px 100px 200px;
+    z-index: -1; } }
+
+#athletes-conclusion section article {
+  grid-area: athleteconp;
+  z-index: 1;
+  background-color: #0C153C;
+  color: #8CD2FF;
+  padding: 40px 30px; }
+  @media (min-width: 768px) {
+    #athletes-conclusion section article {
+      padding: 50px; } }
+  @media (min-width: 992px) {
+    #athletes-conclusion section article {
+      width: 500px; } }
+  #athletes-conclusion section article p {
+    font-size: 1.125rem; }
+    #athletes-conclusion section article p span {
+      font-weight: 600; }
+  #athletes-conclusion section article h3 {
+    padding: 5px 0px;
+    font-size: 1.625rem; }
+
+#athletes-conclusion section div {
+  height: 50vh;
+  background-image: url("../img/athletes/athletes-car.jpg"); }
+  @media (min-width: 768px) {
+    #athletes-conclusion section div {
+      position: absolute;
+      height: 30vh;
+      width: 400px;
+      bottom: -100px; } }
+  @media (min-width: 992px) {
+    #athletes-conclusion section div {
+      bottom: auto;
+      top: 100px;
+      right: 55%;
+      height: 500px;
+      width: 500px;
+      background-size: cover; } }
+
+#athletes-conclusion #athletes-end {
+  color: #0C153C;
+  padding: 40px 30px;
+  font-size: 1.625rem; }
+  @media (min-width: 768px) {
+    #athletes-conclusion #athletes-end {
+      padding: 150px 100px 50px;
+      text-align: center; } }
+  @media (min-width: 992px) {
+    #athletes-conclusion #athletes-end {
+      width: 500px;
+      text-align: left;
+      padding: 0px 100px 50px;
+      margin-left: 40%;
+      margin-top: -160px;
+      z-index: 10; } }
+
+#athletes-conclusion h2 {
+  color: #EC320D;
+  font-size: 2.1875rem;
+  padding: 0 30px; }
+  @media (min-width: 768px) {
+    #athletes-conclusion h2 {
+      padding: 0px 50px;
+      text-align: center; } }
 #sponsors-hero {
   background-image: url("../img/sponsors/hero.jpg");
   background-size: cover;

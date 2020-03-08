@@ -22,7 +22,10 @@
 // @import "index-setion/_name_of_scss_file";
 
 // Athletes Section Styles
-//@import "athletes-section/_name_of_scss_file";
+@import "athletes/_athletes-hero";
+@import "athletes/_athletes-info";
+@import "athletes/_athletes-who";
+@import "athletes/_athletes-conclusion";
 
 // Sponsors Section Styles
 @import "sponsors-sections/_hero.scss";
