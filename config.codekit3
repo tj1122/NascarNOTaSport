@@ -9,6 +9,14 @@
 	],
 "creatorBuild": "31934",
 "files": {
+	"/.gitignore": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/.gitignore",
+		"oF": 0
+		},
 	"/deploy/athletes.html": {
 		"cB": 0,
 		"ft": 8192,
@@ -120,6 +128,17 @@
 		"opt": 0,
 		"plM": 52780316221407,
 		"prP": 0
+		},
+	"/deploy/img/sponsors/hero.jpg": {
+		"ft": 16384,
+		"iS": 605192,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/deploy/img/sponsors/hero.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 1,
+		"q": 100
 		},
 	"/deploy/index.html": {
 		"cB": 0,
@@ -487,6 +506,32 @@
 		"oS": 0,
 		"uL": 1
 		},
+	"/dev/scss/sponsors-sections/_hero.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "/dev/scss/sponsors-sections/_hero.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
+	"/dev/scss/sponsors-sections/_overwhelming.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "/dev/scss/sponsors-sections/_overwhelming.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
 	"/dev/scss/styles.scss": {
 		"aP": 0,
 		"bl": 0,
@@ -500,6 +545,62 @@
 		"oS": 0,
 		"uL": 1
 		},
+	"/dev/sponsors/brand.kit": {
+		"cB": 0,
+		"ft": 2048,
+		"hM": 0,
+		"oA": 1,
+		"oAP": "/dev/sponsors/brand.html",
+		"oF": 0
+		},
+	"/dev/sponsors/coke.kit": {
+		"cB": 0,
+		"ft": 2048,
+		"hM": 0,
+		"oA": 1,
+		"oAP": "/dev/sponsors/coke.html",
+		"oF": 0
+		},
+	"/dev/sponsors/derby.kit": {
+		"cB": 0,
+		"ft": 2048,
+		"hM": 0,
+		"oA": 1,
+		"oAP": "/dev/sponsors/derby.html",
+		"oF": 0
+		},
+	"/dev/sponsors/hero.kit": {
+		"cB": 0,
+		"ft": 2048,
+		"hM": 0,
+		"oA": 1,
+		"oAP": "/dev/sponsors/hero.html",
+		"oF": 0
+		},
+	"/dev/sponsors/location.kit": {
+		"cB": 0,
+		"ft": 2048,
+		"hM": 0,
+		"oA": 1,
+		"oAP": "/dev/sponsors/location.html",
+		"oF": 0
+		},
+	"/dev/sponsors/overwhelming.kit": {
+		"cB": 0,
+		"ft": 2048,
+		"hM": 0,
+		"oA": 1,
+		"oAP": "/dev/sponsors/overwhelming.html",
+		"oF": 0
+		},
+	"/dev/sponsors/series.kit": {
+		"cB": 0,
+		"ft": 2048,
+		"hM": 0,
+		"oA": 1,
+		"oAP": "/dev/sponsors/series.html",
+		"oF": 0
+		},
 	"/dev/sponsors/sponsors.kit": {
 		"cB": 0,
 		"ft": 2048,
@@ -507,6 +608,14 @@
 		"oA": 1,
 		"oAP": "/deploy/sponsors.html",
 		"oF": 2
+		},
+	"/dev/sponsors/viewers.kit": {
+		"cB": 0,
+		"ft": 2048,
+		"hM": 0,
+		"oA": 1,
+		"oAP": "/dev/sponsors/viewers.html",
+		"oF": 0
 		},
 	"/dev/testimony/testimony.kit": {
 		"cB": 0,
