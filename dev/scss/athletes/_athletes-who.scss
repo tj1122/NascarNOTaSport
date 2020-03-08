@@ -7,7 +7,7 @@
         grid-template-areas: "athletesWhoTitle athletesWhoImgs""athletesWhoPara athletesWhoImgs";
     }
     @include lg {
-        grid-template-columns: 50% 50%;
+        grid-template-columns: 35% auto;
             grid-template-areas: "athletesWhoTitle athletesWhoImgs""athletesWhoPara  athletesWhoImgs";
     }
 
@@ -23,6 +23,7 @@
             padding: 50px 50px 0;
         }
         @include lg {
+            width: 50%;
         }
     }
 
@@ -42,9 +43,10 @@
             top: 50px;
             }
             @include lg {
-            top: 12%;
+            height: 200px;
+            top: 8%;
             right: auto;
-            left: -50px;
+            left: 5%;
 
             }
         }
@@ -64,7 +66,7 @@
             }
             @include lg {
             top: 35%;
-            left: 130px;
+            left: 25%;
             }
         }
 
@@ -79,13 +81,15 @@
                 bottom: 50px;
                 }
             @include lg {
+            height: 350px;
             right: auto;
-            left: 250px;
-            bottom: 80px;
+            left: 35%;
+            bottom: 5%;
             }
         }
 
         h2 {
+            overflow: hidden;
             font-family: 'Barlow';
             font-weight: 800;
             font-size: rem-calc(200);
@@ -100,9 +104,9 @@
             }
             @include lg {
                 padding: 0;
-                bottom: 60px;
+                
                 right: auto;
-                left: 480px;
+                left: 70%;
             }
         }
     }
@@ -125,7 +129,9 @@
             padding: 0 30px 40px;
             @include md {
             padding: 0px 0px 50px 50px;}
-            @include lg {}
+            @include lg {
+            padding: 0px 50px 50px;
+            }
         }
     }
 }

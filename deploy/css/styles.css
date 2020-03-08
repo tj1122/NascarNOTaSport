@@ -465,16 +465,15 @@ footer {
 
 #athletes-hero {
   background-image: url("../img/athletes/athletes-hero.jpg");
-  height: 300px;
-  background-position: 50% -50%;
-  background-size: 150%;
+  height: 400px;
+  background-position: 50% -70%;
+  background-size: cover;
   display: flex;
   align-items: center; }
   @media (min-width: 768px) {
     #athletes-hero {
       height: 600px;
-      background-size: cover;
-      background-position: 5% center; } }
+      background-size: cover; } }
   @media (min-width: 992px) {
     #athletes-hero {
       height: 800px;
@@ -531,7 +530,7 @@ footer {
       grid-template-areas: "athletesWhoTitle athletesWhoImgs" "athletesWhoPara athletesWhoImgs"; } }
   @media (min-width: 992px) {
     #athletes-who {
-      grid-template-columns: 50% 50%;
+      grid-template-columns: 35% auto;
       grid-template-areas: "athletesWhoTitle athletesWhoImgs" "athletesWhoPara  athletesWhoImgs"; } }
   #athletes-who h2 {
     grid-area: athletesWhoTitle;
@@ -544,6 +543,9 @@ footer {
     @media (min-width: 768px) {
       #athletes-who h2 {
         padding: 50px 50px 0; } }
+    @media (min-width: 992px) {
+      #athletes-who h2 {
+        width: 50%; } }
   #athletes-who article {
     grid-area: athletesWhoImgs;
     position: relative;
@@ -561,9 +563,10 @@ footer {
           top: 50px; } }
       @media (min-width: 992px) {
         #athletes-who article #athletes-circleguy {
-          top: 12%;
+          height: 200px;
+          top: 8%;
           right: auto;
-          left: -50px; } }
+          left: 5%; } }
     #athletes-who article h3 {
       font-family: 'Barlow';
       font-weight: 800;
@@ -580,7 +583,7 @@ footer {
       @media (min-width: 992px) {
         #athletes-who article h3 {
           top: 35%;
-          left: 130px; } }
+          left: 25%; } }
     #athletes-who article #athletes-circlecar {
       height: 200px;
       position: absolute;
@@ -593,10 +596,12 @@ footer {
           bottom: 50px; } }
       @media (min-width: 992px) {
         #athletes-who article #athletes-circlecar {
+          height: 350px;
           right: auto;
-          left: 250px;
-          bottom: 80px; } }
+          left: 35%;
+          bottom: 5%; } }
     #athletes-who article h2 {
+      overflow: hidden;
       font-family: 'Barlow';
       font-weight: 800;
       font-size: 12.5rem;
@@ -612,9 +617,8 @@ footer {
       @media (min-width: 992px) {
         #athletes-who article h2 {
           padding: 0;
-          bottom: 60px;
           right: auto;
-          left: 480px; } }
+          left: 70%; } }
   #athletes-who section {
     grid-area: athletesWhoPara; }
     #athletes-who section h3 {
@@ -631,20 +635,37 @@ footer {
       @media (min-width: 768px) {
         #athletes-who section p {
           padding: 0px 0px 50px 50px; } }
+      @media (min-width: 992px) {
+        #athletes-who section p {
+          padding: 0px 50px 50px; } }
 
 @media (min-width: 768px) {
   #athletes-conclusion section {
     background-color: #EAF7FF;
+    padding: 50px 0px 100px;
     position: relative;
     display: grid;
-    grid-template-columns: 40% 60%;
+    grid-template-columns: 30% 70%;
     grid-template-areas: "athleteconimg athleteconp"; } }
+
+@media (min-width: 992px) {
+  #athletes-conclusion section {
+    grid-template-columns: 40% 60%;
+    padding: 50px 100px 200px;
+    z-index: -1; } }
 
 #athletes-conclusion section article {
   grid-area: athleteconp;
+  z-index: 1;
   background-color: #0C153C;
   color: #8CD2FF;
   padding: 40px 30px; }
+  @media (min-width: 768px) {
+    #athletes-conclusion section article {
+      padding: 50px; } }
+  @media (min-width: 992px) {
+    #athletes-conclusion section article {
+      width: 500px; } }
   #athletes-conclusion section article p {
     font-size: 1.125rem; }
     #athletes-conclusion section article p span {
@@ -660,14 +681,39 @@ footer {
     #athletes-conclusion section div {
       position: absolute;
       height: 30vh;
-      width: 400px; } }
+      width: 400px;
+      bottom: -100px; } }
+  @media (min-width: 992px) {
+    #athletes-conclusion section div {
+      bottom: auto;
+      top: 100px;
+      right: 55%;
+      height: 500px;
+      width: 500px;
+      background-size: cover; } }
 
 #athletes-conclusion #athletes-end {
   color: #0C153C;
   padding: 40px 30px;
   font-size: 1.625rem; }
+  @media (min-width: 768px) {
+    #athletes-conclusion #athletes-end {
+      padding: 150px 100px 50px;
+      text-align: center; } }
+  @media (min-width: 992px) {
+    #athletes-conclusion #athletes-end {
+      width: 500px;
+      text-align: left;
+      padding: 0px 100px 50px;
+      margin-left: 40%;
+      margin-top: -160px;
+      z-index: 10; } }
 
 #athletes-conclusion h2 {
   color: #EC320D;
   font-size: 2.1875rem;
   padding: 0 30px; }
+  @media (min-width: 768px) {
+    #athletes-conclusion h2 {
+      padding: 0px 50px;
+      text-align: center; } }
