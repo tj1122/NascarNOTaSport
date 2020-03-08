@@ -17,6 +17,7 @@
   @include lg{
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
+    padding: 20px 120px 20px 120px;
     grid-template-areas: "title lid"
                           "descrip trunk";
   }
@@ -24,6 +25,9 @@
     font-size: rem-calc(60);
     color: $blue;
     grid-area: "title";
+    @include lg{
+      font-size: rem-calc(90);
+    }
   }
   p:nth-child(2){
     color: $blue-light;
@@ -40,6 +44,15 @@
     }
     img{
       margin: -23px 0px 0px 40px;
+    }
+    p:nth-child(3){
+      font-size: rem-calc(22);
+    }
+    h2{
+      font-size: rem-calc(22);
+    }
+    h3{
+      font-size: rem-calc(35);
     }
     p:nth-child(3){
       font-size: rem-calc(22);
