@@ -531,8 +531,8 @@ footer {
       grid-template-areas: "athletesWhoTitle athletesWhoImgs" "athletesWhoPara athletesWhoImgs"; } }
   @media (min-width: 992px) {
     #athletes-who {
-      grid-template-columns: 35% 10% 50%;
-      grid-template-areas: "athletesWhoTitle . athletesWhoImgs" "athletesWhoPara .  athletesWhoImgs"; } }
+      grid-template-columns: 50% 50%;
+      grid-template-areas: "athletesWhoTitle athletesWhoImgs" "athletesWhoPara  athletesWhoImgs"; } }
   #athletes-who h2 {
     grid-area: athletesWhoTitle;
     color: #8CD2FF;
@@ -561,10 +561,9 @@ footer {
           top: 50px; } }
       @media (min-width: 992px) {
         #athletes-who article #athletes-circleguy {
-          height: 250px;
-          top: -5%;
+          top: 12%;
           right: auto;
-          left: 0px; } }
+          left: -50px; } }
     #athletes-who article h3 {
       font-family: 'Barlow';
       font-weight: 800;
@@ -581,7 +580,7 @@ footer {
       @media (min-width: 992px) {
         #athletes-who article h3 {
           top: 35%;
-          left: 240px; } }
+          left: 130px; } }
     #athletes-who article #athletes-circlecar {
       height: 200px;
       position: absolute;
@@ -594,10 +593,9 @@ footer {
           bottom: 50px; } }
       @media (min-width: 992px) {
         #athletes-who article #athletes-circlecar {
-          height: 400px;
           right: auto;
-          left: 330px;
-          bottom: -100px; } }
+          left: 250px;
+          bottom: 80px; } }
     #athletes-who article h2 {
       font-family: 'Barlow';
       font-weight: 800;
@@ -613,9 +611,10 @@ footer {
           right: -65px; } }
       @media (min-width: 992px) {
         #athletes-who article h2 {
-          bottom: 30px;
+          padding: 0;
+          bottom: 60px;
           right: auto;
-          left: 560px; } }
+          left: 480px; } }
   #athletes-who section {
     grid-area: athletesWhoPara; }
     #athletes-who section h3 {
@@ -632,3 +631,43 @@ footer {
       @media (min-width: 768px) {
         #athletes-who section p {
           padding: 0px 0px 50px 50px; } }
+
+@media (min-width: 768px) {
+  #athletes-conclusion section {
+    background-color: #EAF7FF;
+    position: relative;
+    display: grid;
+    grid-template-columns: 40% 60%;
+    grid-template-areas: "athleteconimg athleteconp"; } }
+
+#athletes-conclusion section article {
+  grid-area: athleteconp;
+  background-color: #0C153C;
+  color: #8CD2FF;
+  padding: 40px 30px; }
+  #athletes-conclusion section article p {
+    font-size: 1.125rem; }
+    #athletes-conclusion section article p span {
+      font-weight: 600; }
+  #athletes-conclusion section article h3 {
+    padding: 5px 0px;
+    font-size: 1.625rem; }
+
+#athletes-conclusion section div {
+  height: 50vh;
+  background-image: url("../img/athletes/athletes-car.jpg"); }
+  @media (min-width: 768px) {
+    #athletes-conclusion section div {
+      position: absolute;
+      height: 30vh;
+      width: 400px; } }
+
+#athletes-conclusion #athletes-end {
+  color: #0C153C;
+  padding: 40px 30px;
+  font-size: 1.625rem; }
+
+#athletes-conclusion h2 {
+  color: #EC320D;
+  font-size: 2.1875rem;
+  padding: 0 30px; }

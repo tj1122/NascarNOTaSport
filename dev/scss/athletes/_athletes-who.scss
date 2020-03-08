@@ -7,8 +7,8 @@
         grid-template-areas: "athletesWhoTitle athletesWhoImgs""athletesWhoPara athletesWhoImgs";
     }
     @include lg {
-        grid-template-columns: 35% 10% 50%;
-            grid-template-areas: "athletesWhoTitle . athletesWhoImgs""athletesWhoPara .  athletesWhoImgs";
+        grid-template-columns: 50% 50%;
+            grid-template-areas: "athletesWhoTitle athletesWhoImgs""athletesWhoPara  athletesWhoImgs";
     }
 
     h2 {
@@ -42,10 +42,9 @@
             top: 50px;
             }
             @include lg {
-            height: 250px;
-            top: -5%;
+            top: 12%;
             right: auto;
-            left: 0px;
+            left: -50px;
 
             }
         }
@@ -65,7 +64,7 @@
             }
             @include lg {
             top: 35%;
-            left: 240px;
+            left: 130px;
             }
         }
 
@@ -80,10 +79,9 @@
                 bottom: 50px;
                 }
             @include lg {
-            height: 400px;
             right: auto;
-            left: 330px;
-            bottom: -100px;
+            left: 250px;
+            bottom: 80px;
             }
         }
 
@@ -101,9 +99,10 @@
                 right: -65px;
             }
             @include lg {
-                bottom: 30px;
+                padding: 0;
+                bottom: 60px;
                 right: auto;
-                left: 560px;
+                left: 480px;
             }
         }
     }

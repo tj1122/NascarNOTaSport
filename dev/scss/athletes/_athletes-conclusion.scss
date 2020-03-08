@@ -1,0 +1,51 @@
+#athletes-conclusion{
+    section{
+        @include md {
+            background-color: $blue-light;
+            position: relative;
+            display: grid;
+            grid-template-columns: 40% 60%;
+            grid-template-areas: "athleteconimg athleteconp"
+        }
+        @include lg {}
+        article{
+            grid-area: athleteconp;
+            background-color: $purple-dark;
+            color: $blue;
+            padding: 40px 30px;
+            @include md {}
+            @include lg {}
+            p{
+                font-size: rem-calc(18);
+                span{
+                    font-weight: 600;
+                }
+            }
+            h3{
+                padding: 5px 0px;
+
+                font-size: rem-calc(26);
+            }
+        }
+        div{
+            height: 50vh;
+            background-image: url("../img/athletes/athletes-car.jpg");
+            @include md {position: absolute;
+            height: 30vh;
+            width: 400px;}
+            @include lg {}
+        }
+    }
+        #athletes-end{
+            color: $purple-dark;
+            padding: 40px 30px;
+            font-size: rem-calc(26);
+        }
+        h2{
+            color: $red;
+            font-size: rem-calc(35);
+            padding: 0 30px;
+        }
+
+
+}

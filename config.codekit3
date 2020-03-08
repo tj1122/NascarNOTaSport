@@ -167,6 +167,14 @@
 		"oAP": "/deploy/testimony.html",
 		"oF": 0
 		},
+	"/dev/athletes/athletes-conclusion.kit": {
+		"cB": 0,
+		"ft": 2048,
+		"hM": 0,
+		"oA": 1,
+		"oAP": "/dev/athletes/athletes-conclusion.html",
+		"oF": 0
+		},
 	"/dev/athletes/athletes-hero.kit": {
 		"cB": 0,
 		"ft": 2048,
@@ -296,6 +304,19 @@
 		"oA": 1,
 		"oAP": "/dev/navigation.html",
 		"oF": 0
+		},
+	"/dev/scss/athletes/_athletes-conclusion.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "/dev/scss/athletes/_athletes-conclusion.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
 		},
 	"/dev/scss/athletes/_athletes-hero.scss": {
 		"aP": 0,
