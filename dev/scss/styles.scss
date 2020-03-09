@@ -19,7 +19,11 @@
 @import "layout/_footer";
 
 // Index Section Styles
-// @import "index-setion/_name_of_scss_file";
+@import "index-sections/_index-hero.scss";
+@import "index-sections/_nascar.scss";
+@import "index-sections/_notSport.scss";
+@import "index-sections/_requirements.scss";
+@import "index-sections/_gallery.scss";
 
 // Athletes Section Styles
 @import "athletes/_athletes-hero";
