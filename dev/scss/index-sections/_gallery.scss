@@ -7,6 +7,15 @@
             display:grid;
             grid-template-columns: 30px 30% auto 20px;
             grid-template-areas: ". gallery1 gallery1 ." ". gallery2 gallery3 ." ". . gallery3 .";
+
+            @include md{
+                grid-template-areas: ". . gallery1 ." ". gallery2 gallery1 ." ". gallery3 gallery1 .";
+                grid-template-columns: 15% 30% auto 5%;
+            }
+            @include lg{
+                grid-template-columns:". . gallery2 ." ". . gallery2 gallery1" ". gallery3 . gallery1";
+                grid-template-columns: 15% 30% auto 5%;
+            }
             li{
                 background-repeat: no-repeat;
                 background-size: cover;
@@ -24,6 +33,15 @@
                 border-radius: 1000px;
                 background-position: 100%;
                 grid-area:gallery1;
+
+                @include md{
+                    height: 33vh;
+                    width: 90%;
+                }
+                @include lg{
+                    height: 55vh;
+                    width: 85%;
+                }
                 div{
                     background-color: $blue;
                 }
@@ -35,6 +53,16 @@
                 border-radius: 1000px;
                 background-position: 30%;
                 grid-area:gallery2;
+
+                @include md{
+                    width: 70%;
+                    margin-top:30%;
+                }
+                @include lg{
+                    width: 65%;
+                    height:25vh;
+                    margin-top:0;
+                }
                 div{
                     background-color: $red;
                 }
@@ -47,6 +75,17 @@
                 background-position: 30%;
                 margin-top:20%;
                 grid-area:gallery3;
+
+                @include md{
+                    height: 20vh;
+                    width: 90%;
+                    margin-left: 15%;
+                }
+                @include lg{
+                    height: 40vh;
+                    width: 100%;
+                    margin-left: 0;
+                }
                 div{
                     background-color: $orange;
                 }

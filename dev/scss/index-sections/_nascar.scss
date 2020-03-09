@@ -12,7 +12,7 @@
             height: 62vh;
         }
         @include lg{
-            height: 64vh;
+            height: 90vh;
         }
         aside{
             width: 100vw;
@@ -30,9 +30,8 @@
 
             @include lg{
                 width: 45vw;
-                height:20vh;
                 z-index: 5;
-                top: 25vh;
+                top: 40vh;
                 right:50px;
             }
 
@@ -77,7 +76,7 @@
                 grid-template-columns: 65px 50% auto;
                 grid-template-areas: ". content1 . " ". content2 .";
                 position: absolute;
-                top: 45vh;
+                top: 65vh;
             }
             h2{
                 color:$purple;

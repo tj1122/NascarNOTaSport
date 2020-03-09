@@ -539,7 +539,7 @@ footer > div {
       height: 62vh; } }
   @media (min-width: 992px) {
     #nascar > div {
-      height: 64vh; } }
+      height: 90vh; } }
   #nascar > div aside {
     width: 100vw;
     height: 15%;
@@ -555,9 +555,8 @@ footer > div {
     @media (min-width: 992px) {
       #nascar > div aside {
         width: 45vw;
-        height: 20vh;
         z-index: 5;
-        top: 25vh;
+        top: 40vh;
         right: 50px; } }
     #nascar > div aside h2 {
       color: #8CD2FF;
@@ -594,7 +593,7 @@ footer > div {
         grid-template-columns: 65px 50% auto;
         grid-template-areas: ". content1 . " ". content2 .";
         position: absolute;
-        top: 45vh; } }
+        top: 65vh; } }
     #nascar > div article h2 {
       color: #1F2C66;
       padding: 30px 0; }
@@ -618,6 +617,9 @@ footer > div {
   @media (min-width: 768px) {
     #notSport {
       padding-bottom: 0; } }
+  @media (min-width: 992px) {
+    #notSport {
+      padding: 0; } }
   @media (min-width: 768px) {
     #notSport > div {
       display: grid;
@@ -652,7 +654,10 @@ footer > div {
         margin: 50px 0 0; } }
     @media (min-width: 992px) {
       #notSport > div > section {
-        padding: 0; } }
+        margin-left: 3%;
+        margin-right: 3%;
+        padding: 0;
+        margin-top: 25px; } }
     #notSport > div > section h1 {
       text-align: center;
       font-weight: 800;
@@ -671,30 +676,56 @@ footer > div {
       @media (min-width: 768px) {
         #notSport > div > section h3 {
           font-size: 1rem; } }
+      @media (min-width: 992px) {
+        #notSport > div > section h3 {
+          padding-top: 30px; } }
     #notSport > div > section ul li {
       color: #8CD2FF;
       padding-top: 20px; }
       @media (min-width: 768px) {
         #notSport > div > section ul li {
           font-size: 1.25rem; } }
+      @media (min-width: 992px) {
+        #notSport > div > section ul li {
+          padding-top: 30px; } }
 
 /* =============
     Requirements
 ============= */
 #requirements > div > article {
   padding: 0 30px; }
+  @media (min-width: 768px) {
+    #requirements > div > article {
+      padding: 0 50px; } }
   #requirements > div > article h1 {
     font-size: 3.125rem;
     color: #1F2C66; }
+    @media (min-width: 768px) {
+      #requirements > div > article h1 {
+        font-size: 3.75rem;
+        margin-right: 40%; } }
+    @media (min-width: 992px) {
+      #requirements > div > article h1 {
+        font-size: 4.6875rem;
+        margin-right: 0; } }
   #requirements > div > article h2 {
     color: #1F2C66;
     padding-top: 20px;
     font-weight: 700; }
+    @media (min-width: 768px) {
+      #requirements > div > article h2 {
+        font-size: 1.625rem; } }
 
 #requirements > div > section > div {
   display: grid;
   grid-template-columns: 30px 15% auto 30px;
   grid-template-areas: ".  number1 content1 ." ". number2 content2 ." ". number3  content3  ."; }
+  @media (min-width: 768px) {
+    #requirements > div > section > div {
+      grid-template-columns: 10% 10% auto 10%; } }
+  @media (min-width: 992px) {
+    #requirements > div > section > div {
+      grid-template-columns: 15% 10% auto 15%; } }
   #requirements > div > section > div h6 {
     padding-top: 20px;
     margin: 0; }
@@ -702,24 +733,39 @@ footer > div {
     padding-top: 20px;
     font-weight: 600;
     color: #1F2C66; }
+    @media (min-width: 768px) {
+      #requirements > div > section > div p {
+        font-size: rem-caalc(22); } }
     #requirements > div > section > div p span:nth-child(odd) {
       color: #EC320D; }
     #requirements > div > section > div p span:nth-child(even) {
       color: #1F2C66;
       font-weight: 400;
       font-size: 0.875rem; }
+      @media (min-width: 768px) {
+        #requirements > div > section > div p span:nth-child(even) {
+          font-size: 1rem; } }
   #requirements > div > section > div h6:nth-child(1) {
     grid-area: number1; }
   #requirements > div > section > div p:nth-child(2) {
     grid-area: content1; }
+    @media (min-width: 768px) {
+      #requirements > div > section > div p:nth-child(2) {
+        padding-top: 50px; } }
   #requirements > div > section > div h6:nth-child(3) {
     grid-area: number2; }
   #requirements > div > section > div p:nth-child(4) {
     grid-area: content2; }
+    @media (min-width: 768px) {
+      #requirements > div > section > div p:nth-child(4) {
+        padding-top: 50px; } }
   #requirements > div > section > div h6:nth-child(5) {
     grid-area: number3; }
   #requirements > div > section > div p:nth-child(6) {
     grid-area: content3; }
+    @media (min-width: 768px) {
+      #requirements > div > section > div p:nth-child(6) {
+        padding-top: 50px; } }
 
 /* =============
     Index - Gallery
@@ -728,6 +774,14 @@ footer > div {
   display: grid;
   grid-template-columns: 30px 30% auto 20px;
   grid-template-areas: ". gallery1 gallery1 ." ". gallery2 gallery3 ." ". . gallery3 ."; }
+  @media (min-width: 768px) {
+    #gallery > div ul {
+      grid-template-areas: ". . gallery1 ." ". gallery2 gallery1 ." ". gallery3 gallery1 .";
+      grid-template-columns: 15% 30% auto 5%; } }
+  @media (min-width: 992px) {
+    #gallery > div ul {
+      grid-template-columns: ". . gallery2 ." ". . gallery2 gallery1" ". gallery3 . gallery1";
+      grid-template-columns: 15% 30% auto 5%; } }
   #gallery > div ul li {
     background-repeat: no-repeat;
     background-size: cover; }
@@ -743,6 +797,14 @@ footer > div {
     border-radius: 1000px;
     background-position: 100%;
     grid-area: gallery1; }
+    @media (min-width: 768px) {
+      #gallery > div ul li:nth-child(1) {
+        height: 33vh;
+        width: 90%; } }
+    @media (min-width: 992px) {
+      #gallery > div ul li:nth-child(1) {
+        height: 55vh;
+        width: 85%; } }
     #gallery > div ul li:nth-child(1) div {
       background-color: #8CD2FF; }
   #gallery > div ul li:nth-child(2) {
@@ -752,6 +814,15 @@ footer > div {
     border-radius: 1000px;
     background-position: 30%;
     grid-area: gallery2; }
+    @media (min-width: 768px) {
+      #gallery > div ul li:nth-child(2) {
+        width: 70%;
+        margin-top: 30%; } }
+    @media (min-width: 992px) {
+      #gallery > div ul li:nth-child(2) {
+        width: 65%;
+        height: 25vh;
+        margin-top: 0; } }
     #gallery > div ul li:nth-child(2) div {
       background-color: #EC320D; }
   #gallery > div ul li:nth-child(3) {
@@ -762,5 +833,15 @@ footer > div {
     background-position: 30%;
     margin-top: 20%;
     grid-area: gallery3; }
+    @media (min-width: 768px) {
+      #gallery > div ul li:nth-child(3) {
+        height: 20vh;
+        width: 90%;
+        margin-left: 15%; } }
+    @media (min-width: 992px) {
+      #gallery > div ul li:nth-child(3) {
+        height: 40vh;
+        width: 100%;
+        margin-left: 0; } }
     #gallery > div ul li:nth-child(3) div {
       background-color: #FF812C; }
