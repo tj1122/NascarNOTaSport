@@ -1,0 +1,32 @@
+/* =============
+    Header
+============= */
+header {
+  position: fixed;
+  width: 100%;
+  background-color: $white;
+  padding: 10px 0;
+  display: grid;
+  grid-template-columns: 20px auto auto 20px;
+  grid-template-areas: ". logo burger .";
+  z-index: 20;
+
+  a {
+    grid-area: logo;
+    display: flex;
+    align-self: center;
+  }
+
+  > div {
+    grid-area: burger;
+    display: flex;
+    justify-content: flex-end;
+
+    section {
+      svg {
+        width: 44px;
+        cursor: pointer;
+      }
+    }
+  }
+}

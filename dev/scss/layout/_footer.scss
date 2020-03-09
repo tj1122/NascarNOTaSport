@@ -1,0 +1,32 @@
+/* =============
+    Footer
+============= */
+footer {
+    >div{
+      padding: 20px 0px;
+      display: grid;
+      grid-template-columns: 20px auto auto 20px;
+      grid-template-areas: ". logo socials .";
+      background-color: $gray;
+      @include md {
+          text-align: center;
+      }
+      img {
+        grid-area: logo;
+        display: flex;
+        align-self: center;
+      }
+
+      ul{
+        grid-area: socials;
+        display: flex;
+        justify-content: flex-end;
+        li{
+          margin-left: 14px;
+          cursor: pointer;
+        }
+      }
+    }
+
+
+}

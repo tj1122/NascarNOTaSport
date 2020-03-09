@@ -1,0 +1,53 @@
+/* =============
+    Typography
+============= */
+body {
+  font-family: 'Raleway',;
+}
+
+h1 {
+  font-family: 'Barlow',;
+}
+
+h2 {
+  font-family: 'Barlow';
+  font-weight: 600;
+  font-size: rem-calc(16);
+}
+
+h3 {
+  font-family: 'Barlow';
+  font-size: rem-calc(16);
+
+  @include md{
+      font-size:  rem-calc(26);
+  }
+}
+
+h6 {
+  font-family: 'Barlow';
+  font-size: rem-calc(90);
+  font-weight: 700;
+  color: $blue;
+
+  @include md{
+      font-size:  rem-calc(120);
+  }
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+p {
+  padding: 0;
+  margin: 0;
+}
+
+p {
+  line-height: rem-calc(25);
+  @include lg {
+    line-height: rem-calc(30);
+  }
+}
