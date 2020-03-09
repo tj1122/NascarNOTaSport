@@ -1,0 +1,35 @@
+#athletes-hero{
+    background-image: url("../img/athletes/athletes-hero.jpg");
+    height: 400px;
+    background-position: 50% -70%;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+        @include md{
+            height: 600px;
+            background-size: cover;
+        
+        }
+        @include lg{
+            height: 800px;
+            background-position: center;
+        }
+    h1{
+        font-size: rem-calc(30);
+        color: $white;
+        font-weight: 800;
+        width: 40%;
+        padding-top: 30px;
+        padding-left: 30px;
+        line-height: .9;
+
+            @include md{
+                padding-top: 0;
+                font-size: rem-calc(70);
+                padding-left: 50px;
+            }
+            @include lg{
+                width: 30%;
+            }
+    }
+}

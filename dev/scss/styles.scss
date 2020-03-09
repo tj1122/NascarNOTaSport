@@ -26,10 +26,20 @@
 @import "index-sections/_gallery.scss";
 
 // Athletes Section Styles
-//@import "athletes-section/_name_of_scss_file";
+@import "athletes/_athletes-hero";
+@import "athletes/_athletes-info";
+@import "athletes/_athletes-who";
+@import "athletes/_athletes-conclusion";
 
 // Sponsors Section Styles
-//@import "sponsors-section/_name_of_scss_file";
+@import "sponsors-sections/_hero.scss";
+@import "sponsors-sections/_overwhelming.scss";
+@import "sponsors-sections/_location.scss";
+@import "sponsors-sections/_brand.scss";
+@import "sponsors-sections/_coke.scss";
+@import "sponsors-sections/_series.scss";
+@import "sponsors-sections/_viewers.scss";
+@import "sponsors-sections/_derby.scss";
 
 // Testimony Section Styles
 //@import "testimony-section//_name_of_scss_file";
