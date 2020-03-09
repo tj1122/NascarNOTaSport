@@ -845,3 +845,657 @@ footer > div {
         margin-left: 0; } }
     #gallery > div ul li:nth-child(3) div {
       background-color: #FF812C; }
+      footer > div {
+        text-align: center; } }
+    footer > div img {
+      grid-area: logo;
+      display: flex;
+      align-self: center; }
+    footer > div ul {
+      grid-area: socials;
+      display: flex;
+      justify-content: flex-end; }
+      footer > div ul li {
+        margin-left: 14px;
+        cursor: pointer; }
+#athletes-hero {
+  background-image: url("../img/athletes/athletes-hero.jpg");
+  height: 400px;
+  background-position: 50% -70%;
+  background-size: cover;
+  display: flex;
+  align-items: center; }
+  @media (min-width: 768px) {
+    #athletes-hero {
+      height: 600px;
+      background-size: cover; } }
+  @media (min-width: 992px) {
+    #athletes-hero {
+      height: 800px;
+      background-position: center; } }
+  #athletes-hero h1 {
+    font-size: 1.875rem;
+    color: #fff;
+    font-weight: 800;
+    width: 40%;
+    padding-top: 30px;
+    padding-left: 30px;
+    line-height: .9; }
+    @media (min-width: 768px) {
+      #athletes-hero h1 {
+        padding-top: 0;
+        font-size: 4.375rem;
+        padding-left: 50px; } }
+    @media (min-width: 992px) {
+      #athletes-hero h1 {
+        width: 30%; } }
+
+#athletes-info section {
+  background-color: #F1F1F1;
+  padding: 40px 30px; }
+  @media (min-width: 768px) {
+    #athletes-info section {
+      padding: 50px;
+      margin: 50px; } }
+  @media (min-width: 992px) {
+    #athletes-info section {
+      width: 63%; } }
+  #athletes-info section p {
+    color: #000;
+    font-family: 'Raleway';
+    font-size: 1rem; }
+    @media (min-width: 768px) {
+      #athletes-info section p {
+        font-size: 1.625rem; } }
+  #athletes-info section h3 {
+    color: #EC320D;
+    font-weight: 700;
+    padding: 10px 0px; }
+    @media (min-width: 768px) {
+      #athletes-info section h3 {
+        font-size: 2.375rem; } }
+
+#athletes-who {
+  overflow: hidden;
+  background-color: #1D86CA; }
+  @media (min-width: 768px) {
+    #athletes-who {
+      display: grid;
+      grid-template-columns: 60% auto;
+      grid-template-areas: "athletesWhoTitle athletesWhoImgs" "athletesWhoPara athletesWhoImgs"; } }
+  @media (min-width: 992px) {
+    #athletes-who {
+      grid-template-columns: 35% auto;
+      grid-template-areas: "athletesWhoTitle athletesWhoImgs" "athletesWhoPara  athletesWhoImgs"; } }
+  #athletes-who h2 {
+    grid-area: athletesWhoTitle;
+    color: #8CD2FF;
+    font-family: 'Barlow';
+    font-weight: 800;
+    font-size: 3.75rem;
+    line-height: 0.9;
+    padding: 30px 30px 0; }
+    @media (min-width: 768px) {
+      #athletes-who h2 {
+        padding: 50px 50px 0; } }
+    @media (min-width: 992px) {
+      #athletes-who h2 {
+        width: 50%; } }
+  #athletes-who article {
+    grid-area: athletesWhoImgs;
+    position: relative;
+    height: 50vh; }
+    @media (min-width: 768px) {
+      #athletes-who article {
+        height: auto; } }
+    #athletes-who article #athletes-circleguy {
+      height: 150px;
+      position: absolute;
+      right: 30px; }
+      @media (min-width: 768px) {
+        #athletes-who article #athletes-circleguy {
+          right: 25vw;
+          top: 50px; } }
+      @media (min-width: 992px) {
+        #athletes-who article #athletes-circleguy {
+          height: 200px;
+          top: 8%;
+          right: auto;
+          left: 5%; } }
+    #athletes-who article h3 {
+      font-family: 'Barlow';
+      font-weight: 800;
+      font-size: 3.75rem;
+      z-index: 10;
+      color: #EAF7FF;
+      position: absolute;
+      top: 30%;
+      left: 38%; }
+      @media (min-width: 768px) {
+        #athletes-who article h3 {
+          top: 35%;
+          left: 25%; } }
+      @media (min-width: 992px) {
+        #athletes-who article h3 {
+          top: 35%;
+          left: 25%; } }
+    #athletes-who article #athletes-circlecar {
+      height: 200px;
+      position: absolute;
+      left: -30px;
+      bottom: 30px; }
+      @media (min-width: 768px) {
+        #athletes-who article #athletes-circlecar {
+          left: auto;
+          right: 5vw;
+          bottom: 50px; } }
+      @media (min-width: 992px) {
+        #athletes-who article #athletes-circlecar {
+          height: 350px;
+          right: auto;
+          left: 35%;
+          bottom: 5%; } }
+    #athletes-who article h2 {
+      overflow: hidden;
+      font-family: 'Barlow';
+      font-weight: 800;
+      font-size: 12.5rem;
+      z-index: 10;
+      color: #EAF7FF;
+      position: absolute;
+      bottom: 0;
+      right: 0; }
+      @media (min-width: 768px) {
+        #athletes-who article h2 {
+          bottom: 20px;
+          right: -65px; } }
+      @media (min-width: 992px) {
+        #athletes-who article h2 {
+          padding: 0;
+          right: auto;
+          left: 70%; } }
+  #athletes-who section {
+    grid-area: athletesWhoPara; }
+    #athletes-who section h3 {
+      font-weight: 700;
+      font-size: 1.625rem;
+      color: #EAF7FF;
+      padding: 30px 30px 5px; }
+      @media (min-width: 768px) {
+        #athletes-who section h3 {
+          padding: 30px 0px 5px 50px; } }
+    #athletes-who section p {
+      color: #EAF7FF;
+      padding: 0 30px 40px; }
+      @media (min-width: 768px) {
+        #athletes-who section p {
+          padding: 0px 0px 50px 50px; } }
+      @media (min-width: 992px) {
+        #athletes-who section p {
+          padding: 0px 50px 50px; } }
+
+@media (min-width: 768px) {
+  #athletes-conclusion section {
+    background-color: #EAF7FF;
+    padding: 50px 0px 100px;
+    position: relative;
+    display: grid;
+    grid-template-columns: 30% 70%;
+    grid-template-areas: "athleteconimg athleteconp"; } }
+
+@media (min-width: 992px) {
+  #athletes-conclusion section {
+    grid-template-columns: 40% 60%;
+    padding: 50px 100px 200px;
+    z-index: -1; } }
+
+#athletes-conclusion section article {
+  grid-area: athleteconp;
+  z-index: 1;
+  background-color: #0C153C;
+  color: #8CD2FF;
+  padding: 40px 30px; }
+  @media (min-width: 768px) {
+    #athletes-conclusion section article {
+      padding: 50px; } }
+  @media (min-width: 992px) {
+    #athletes-conclusion section article {
+      width: 500px; } }
+  #athletes-conclusion section article p {
+    font-size: 1.125rem; }
+    #athletes-conclusion section article p span {
+      font-weight: 600; }
+  #athletes-conclusion section article h3 {
+    padding: 5px 0px;
+    font-size: 1.625rem; }
+
+#athletes-conclusion section div {
+  height: 50vh;
+  background-image: url("../img/athletes/athletes-car.jpg"); }
+  @media (min-width: 768px) {
+    #athletes-conclusion section div {
+      position: absolute;
+      height: 30vh;
+      width: 400px;
+      bottom: -100px; } }
+  @media (min-width: 992px) {
+    #athletes-conclusion section div {
+      bottom: auto;
+      top: 100px;
+      right: 55%;
+      height: 500px;
+      width: 500px;
+      background-size: cover; } }
+
+#athletes-conclusion #athletes-end {
+  color: #0C153C;
+  padding: 40px 30px;
+  font-size: 1.625rem; }
+  @media (min-width: 768px) {
+    #athletes-conclusion #athletes-end {
+      padding: 150px 100px 50px;
+      text-align: center; } }
+  @media (min-width: 992px) {
+    #athletes-conclusion #athletes-end {
+      width: 500px;
+      text-align: left;
+      padding: 0px 100px 50px;
+      margin-left: 40%;
+      margin-top: -160px;
+      z-index: 10; } }
+
+#athletes-conclusion h2 {
+  color: #EC320D;
+  font-size: 2.1875rem;
+  padding: 0 30px; }
+  @media (min-width: 768px) {
+    #athletes-conclusion h2 {
+      padding: 0px 50px;
+      text-align: center; } }
+#sponsors-hero {
+  background-image: url("../img/sponsors/hero.jpg");
+  background-size: cover;
+  background-position: 70% center;
+  background-repeat: no-repeat;
+  height: 70vh;
+  padding-top: 68px;
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-areas: "red-opacity no-red-opacity red-opacity"; }
+  @media (min-width: 768px) {
+    #sponsors-hero {
+      grid-template-columns: 1.5fr 1fr 0fr;
+      grid-template-rows: 1fr;
+      background-position: center;
+      background-position: 30% center;
+      grid-template-areas: "red-opacity no-red-opacity ."; } }
+  @media (min-width: 992px) {
+    #sponsors-hero {
+      grid-template-columns: 2fr 1fr 1fr;
+      grid-template-rows: 1fr;
+      grid-template-areas: "red-opacity no-red-opacity red-opacity"; } }
+  #sponsors-hero .red-opacity {
+    background-color: rgba(164, 27, 0, 0.7);
+    grid-area: "red-opacity"; }
+    #sponsors-hero .red-opacity h1 {
+      color: #fff;
+      font-size: 2.25rem;
+      display: grid;
+      padding-left: 20px;
+      padding-top: 40px;
+      align-items: center; }
+      @media (min-width: 768px) {
+        #sponsors-hero .red-opacity h1 {
+          font-size: 4.6875rem; } }
+
+#overwhelming {
+  position: relative; }
+  @media (min-width: 768px) {
+    #overwhelming {
+      padding-top: 120px; } }
+  #overwhelming > div {
+    background-color: #F1F1F1;
+    padding: 20px; }
+    @media (min-width: 768px) {
+      #overwhelming > div {
+        width: 513px;
+        height: 165px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 0px 0px 0px 20px;
+        position: absolute;
+        top: 30px;
+        margin-left: 30px; } }
+    #overwhelming > div h2 {
+      color: #EC320D;
+      font-size: 1.875rem; }
+      @media (min-width: 768px) {
+        #overwhelming > div h2 {
+          font-size: 2.375rem; } }
+    #overwhelming > div p:nth-child(2) {
+      font-size: 1.25rem; }
+      @media (min-width: 768px) {
+        #overwhelming > div p:nth-child(2) {
+          font-size: 1.625rem; } }
+    #overwhelming > div p:nth-child(3) {
+      font-size: 0.75rem; }
+      @media (min-width: 768px) {
+        #overwhelming > div p:nth-child(3) {
+          font-size: 1rem; } }
+  #overwhelming aside {
+    background-image: url("../img/sponsors/viagra.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 30vh; }
+    @media (min-width: 768px) {
+      #overwhelming aside {
+        background-size: contain;
+        background-position: 90% center; } }
+  #overwhelming #last-p {
+    text-align: center;
+    padding: 20px 40px;
+    font-size: 1.125rem; }
+    @media (min-width: 768px) {
+      #overwhelming #last-p {
+        padding: 20px 100px; } }
+    @media (min-width: 992px) {
+      #overwhelming #last-p {
+        padding: 40px 250px; } }
+    #overwhelming #last-p span {
+      color: #EC320D;
+      font-weight: 700; }
+
+#location {
+  background-color: #1D86CA;
+  padding: 20px 40px;
+  display: grid;
+  grid-template-areas: "title" "descrip" "lid" "trunk";
+  align-items: center;
+  grid-gap: 30px; }
+  @media (min-width: 768px) {
+    #location {
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: .5fr .5fr;
+      grid-template-areas: "title descrip" "lid trunk"; } }
+  @media (min-width: 992px) {
+    #location {
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: 1fr 1fr;
+      padding: 20px 120px 20px 120px;
+      grid-template-areas: "title lid" "descrip trunk"; } }
+  #location h1 {
+    font-size: 3.75rem;
+    color: #8CD2FF;
+    grid-area: "title"; }
+    @media (min-width: 992px) {
+      #location h1 {
+        font-size: 5.625rem; } }
+  #location p:nth-child(2) {
+    color: #EAF7FF;
+    grid-area: "descrip"; }
+  #location div {
+    color: #EAF7FF;
+    grid-area: "lid";
+    justify-self: center;
+    padding-left: 20px; }
+    @media (min-width: 768px) {
+      #location div {
+        padding-left: 0px;
+        justify-self: center; } }
+    #location div img {
+      margin: -23px 0px 0px 40px; }
+    #location div p:nth-child(3) {
+      font-size: 1.375rem; }
+    #location div h2 {
+      font-size: 1.375rem; }
+    #location div h3 {
+      font-size: 2.1875rem; }
+    #location div p:nth-child(3) {
+      font-size: 1.375rem; }
+  #location aside {
+    color: #EAF7FF;
+    grid-area: "trunk";
+    padding-left: 20px; }
+    @media (min-width: 768px) {
+      #location aside {
+        padding-left: 0px;
+        justify-self: center; } }
+    #location aside img {
+      margin: -23px 0px 0px 50px; }
+    #location aside h2 {
+      font-size: 1.375rem; }
+    #location aside h3 {
+      font-size: 2.1875rem; }
+    #location aside p:nth-child(3) {
+      font-size: 1.375rem; }
+
+#brand {
+  position: relative; }
+  @media (min-width: 992px) {
+    #brand {
+      margin: 80px 0px 80px 0px;
+      padding: 0px 70px 0px 70px; } }
+  #brand > div {
+    background-color: #0C153C;
+    padding: 20px 40px; }
+    @media (min-width: 768px) {
+      #brand > div {
+        width: 420px;
+        height: 193px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 0px 0px 0px 30px;
+        position: absolute;
+        top: 0px; } }
+    #brand > div h2 {
+      color: #8CD2FF;
+      font-size: 2.1875rem; }
+      @media (min-width: 768px) {
+        #brand > div h2 {
+          font-size: 2.375rem; } }
+    #brand > div p:nth-child(2) {
+      color: #8CD2FF;
+      font-size: 1rem; }
+      @media (min-width: 768px) {
+        #brand > div p:nth-child(2) {
+          font-size: 1.625rem;
+          padding-right: 30px; } }
+  #brand aside {
+    background-image: url("../img/sponsors/dodge.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 30vh; }
+    @media (min-width: 768px) {
+      #brand aside {
+        background-size: contain;
+        background-position: 100% center; } }
+    @media (min-width: 992px) {
+      #brand aside {
+        background-size: 60%; } }
+  #brand h1 {
+    text-align: center;
+    padding: 20px 40px;
+    font-size: 1.875rem;
+    color: #8CD2FF;
+    background-color: #0C153C; }
+    @media (min-width: 768px) {
+      #brand h1 {
+        padding: 20px 20px;
+        font-size: 2.3125rem; } }
+    @media (min-width: 992px) {
+      #brand h1 {
+        padding: 20px 20px; } }
+    #brand h1 span {
+      color: #EC320D;
+      font-weight: 700; }
+
+#coke {
+  background-image: url("../img/sponsors/coke.jpg");
+  background-size: 250%;
+  background-position: 35% center;
+  background-repeat: no-repeat;
+  height: 75vh;
+  display: grid;
+  grid-auto-rows: 1fr 1fr 1fr; }
+  @media (min-width: 768px) {
+    #coke {
+      background-size: 130%; } }
+  @media (min-width: 992px) {
+    #coke {
+      background-size: 110%; } }
+  #coke .red-opacity {
+    background-color: rgba(164, 27, 0, 0.7);
+    display: flex;
+    align-items: center; }
+  #coke p {
+    text-align: center;
+    color: #fff;
+    padding: 0px 20px 0px 20px;
+    font-size: 1rem; }
+    @media (min-width: 768px) {
+      #coke p {
+        font-size: 1.625rem; } }
+
+#series {
+  display: grid;
+  grid-template-areas: "title1" "xfinity" "monster" "title2"; }
+  @media (min-width: 768px) {
+    #series {
+      padding: 40px 120px 40px 120px;
+      grid-gap: 20px; } }
+  @media (min-width: 992px) {
+    #series {
+      grid-template-areas: "title1 xfinity" "mosnter title2"; } }
+  #series h1 {
+    font-size: 3.75rem;
+    color: #1F2C66;
+    padding: 20px; }
+    @media (min-width: 768px) {
+      #series h1 {
+        padding: 0px; } }
+  #series h1:nth-child(1) {
+    grid-area: "title1"; }
+  #series h1:nth-child(4) {
+    grid-area: "title2"; }
+    @media (min-width: 768px) {
+      #series h1:nth-child(4) {
+        display: grid;
+        justify-content: flex-end;
+        align-items: flex-end; } }
+  #series #xfinity {
+    background-image: url("../img/sponsors/xfinity.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 30vh;
+    display: grid;
+    grid-auto-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+    align-items: center;
+    z-index: 4;
+    grid-area: "." "." "." "." "." "text"; }
+    @media (min-width: 992px) {
+      #series #xfinity {
+        margin-left: -60px; } }
+  #series #monster {
+    background-image: url("../img/sponsors/monster.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 30vh;
+    display: grid;
+    grid-auto-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+    align-items: center;
+    grid-area: "." "." "." "." "." "text"; }
+    @media (min-width: 992px) {
+      #series #monster {
+        margin-top: -90px;
+        width: 105%; } }
+  #series ul li:nth-child(6) {
+    background-color: rgba(164, 27, 0, 0.7);
+    height: 100%; }
+    #series ul li:nth-child(6) p {
+      font-size: 1.375rem;
+      color: #fff;
+      grid-area: "text";
+      padding-left: 10px;
+      padding-top: 5px; }
+      #series ul li:nth-child(6) p span {
+        font-weight: 700; }
+
+#viewers {
+  padding-top: 10px; }
+  #viewers p:nth-child(1) {
+    color: #1F2C66;
+    text-align: center;
+    font-size: 1rem;
+    font-weight: 700;
+    padding: 0px 30px 0px 30px; }
+    @media (min-width: 768px) {
+      #viewers p:nth-child(1) {
+        font-size: 1.625rem;
+        padding: 0px 90px 0px 90px; } }
+    @media (min-width: 992px) {
+      #viewers p:nth-child(1) {
+        text-align: left;
+        padding: 0px 150px 0px 120px; } }
+  #viewers p:nth-child(2) {
+    color: #1F2C66;
+    text-align: center;
+    font-size: 0.75rem;
+    padding-bottom: 30px; }
+    @media (min-width: 768px) {
+      #viewers p:nth-child(2) {
+        font-size: 1rem; } }
+    @media (min-width: 992px) {
+      #viewers p:nth-child(2) {
+        text-align: left;
+        padding: 0px 150px 30px 120px; } }
+  #viewers div {
+    background-color: #1D86CA; }
+    #viewers div img {
+      width: 100%; }
+
+@media (min-width: 992px) {
+  #derby {
+    padding: 40px 63px 40px 63px; } }
+
+@media (min-width: 992px) {
+  #derby div:nth-child(1) {
+    padding-right: 60px; } }
+
+#derby div:nth-child(1) aside {
+  background-color: #1F2C66; }
+
+#derby div:nth-child(2) {
+  background-image: url("../img/sponsors/derby.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  z-index: -1;
+  position: relative;
+  height: 30vh; }
+  @media (min-width: 992px) {
+    #derby div:nth-child(2) {
+      margin-top: -30px; } }
+
+@media (min-width: 992px) {
+  #derby div:nth-child(3) {
+    margin-top: -30px;
+    padding-left: 60px; } }
+
+#derby div:nth-child(3) aside {
+  background-color: #1F2C66; }
+
+#derby h1 {
+  color: #8CD2FF;
+  font-size: 1rem;
+  padding: 20px 0px 20px 0px;
+  text-align: center;
+  display: grid; }
+  @media (min-width: 768px) {
+    #derby h1 {
+      font-size: 2.25rem; } }

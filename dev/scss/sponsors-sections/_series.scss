@@ -1,0 +1,90 @@
+#series{
+  display: grid;
+  grid-template-areas: "title1"
+                        "xfinity"
+                        "monster"
+                        "title2";
+  @include md{
+    padding: 40px 120px 40px 120px;
+    grid-gap: 20px;
+  }
+  @include lg{
+    grid-template-areas: "title1 xfinity"
+                          "mosnter title2";
+  }
+  h1{
+    font-size: rem-calc(60);
+    color: $purple;
+    padding: 20px;
+    @include md{
+      padding: 0px;
+    }
+  }h1:nth-child(1){
+    grid-area: "title1";
+  }
+  h1:nth-child(4){
+    grid-area: "title2";
+    @include md{
+      display: grid;
+      justify-content: flex-end;
+      align-items: flex-end;
+    }
+  }
+  #xfinity{
+    background-image: url("../img/sponsors/xfinity.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 30vh;
+    display: grid;
+    grid-auto-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+    align-items: center;
+    z-index: 4;
+    grid-area: "."
+                "."
+                "."
+                "."
+                "."
+                "text";
+    @include lg{
+      margin-left: -60px;
+    }
+
+  }
+  #monster{
+    background-image: url("../img/sponsors/monster.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 30vh;
+    display: grid;
+    grid-auto-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+    align-items: center;
+    grid-area: "."
+                "."
+                "."
+                "."
+                "."
+                "text";
+    @include lg{
+      margin-top: -90px;
+      width: 105%;
+    }
+  }
+  ul{
+    li:nth-child(6){
+      background-color: rgba(164, 27, 0, 0.7);
+      height: 100%;
+      p{
+        font-size: rem-calc(22);
+        color: $white;
+        grid-area: "text";
+        padding-left: 10px;
+        padding-top: 5px;
+        span{
+          font-weight: 700;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,30 @@
+#athletes-info{
+    section{
+        background-color: $gray-light;
+        padding: 40px 30px;
+            @include md{
+                padding: 50px;
+                margin: 50px;
+            }
+            @include lg{
+                width: 63%;
+            }
+
+        p{
+            color: $black;
+            font-family: 'Raleway';
+            font-size: rem-calc(16);
+                @include md{
+                    font-size: rem-calc(26);
+                }
+        }
+        h3{
+            color: $red;
+            font-weight: 700;
+            padding: 10px 0px;
+                @include md{
+                    font-size: rem-calc(38);
+                }
+        }
+    }
+}
