@@ -335,7 +335,7 @@ ul {
   max-width: 1024px;
   margin: 0px auto; }
 
-.location-container {
+.blue-container {
   background-color: #1D86CA; }
 
 /* =============
@@ -1491,3 +1491,213 @@ footer > div {
   @media (min-width: 768px) {
     #derby h1 {
       font-size: 2.25rem; } }
+
+#testimony-hero {
+  padding-top: 68px; }
+  #testimony-hero #red-hero {
+    background-image: url("../img/testimony/budlight.jpg");
+    background-size: cover;
+    background-position: 70% center;
+    background-repeat: no-repeat;
+    height: 70vh;
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas: "red-opacity no-red-opacity red-opacity"; }
+    @media (min-width: 768px) {
+      #testimony-hero #red-hero {
+        grid-template-columns: 1.5fr 1fr 0fr;
+        grid-template-rows: 1fr;
+        background-position: center;
+        background-position: 30% center;
+        grid-template-areas: "red-opacity no-red-opacity ."; } }
+    @media (min-width: 992px) {
+      #testimony-hero #red-hero {
+        grid-template-columns: 2fr 1fr 1fr;
+        grid-template-rows: 1fr;
+        grid-template-areas: "red-opacity no-red-opacity red-opacity"; } }
+    #testimony-hero #red-hero .red-opacity {
+      background-color: rgba(164, 27, 0, 0.7);
+      grid-area: "red-opacity"; }
+  #testimony-hero h1 {
+    color: #fff;
+    font-size: 2.25rem;
+    display: grid;
+    padding-left: 20px;
+    position: absolute;
+    padding-top: 40px;
+    align-items: center; }
+    @media (min-width: 768px) {
+      #testimony-hero h1 {
+        font-size: 4.6875rem; } }
+
+#posts {
+  background-color: #1D86CA;
+  padding: 20px 40px; }
+  #posts ul {
+    display: grid;
+    grid-template-rows: auto auto auto auto;
+    grid-gap: 20px; }
+    @media (min-width: 768px) {
+      #posts ul {
+        grid-template-rows: auto auto;
+        grid-template-columns: auto auto; } }
+    #posts ul li div {
+      background-color: #fff;
+      padding: 20px; }
+      #posts ul li div img {
+        padding-bottom: 5px; }
+      #posts ul li div h3 {
+        color: #EC320D;
+        font-size: 1.625rem;
+        padding-bottom: 5px; }
+
+#form {
+  padding: 20px;
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  justify-content: center;
+  align-items: center;
+  grid-gap: 20px;
+  /* Div Layout Styling */
+  /* Text Styling for h2, p, a */ }
+  @media (min-width: 768px) {
+    #form {
+      padding: 40px;
+      grid-template-rows: 0fr 0fr;
+      grid-template-columns: auto auto; } }
+  #form div {
+    justify-self: center;
+    align-self: center; }
+  #form aside {
+    justify-self: center;
+    align-self: center; }
+  #form input {
+    border: 2px solid #eeeeee;
+    height: 46px;
+    margin: 10px 0 0;
+    padding: 1%;
+    font-size: 1.2em;
+    line-height: 1.5em;
+    color: #333333;
+    letter-spacing: 0.01em;
+    font-style: normal;
+    font-weight: 300; }
+  #form #fname {
+    width: 100%; }
+  #form #lname {
+    width: 100%; }
+  #form #email {
+    width: 100%; }
+  #form #address {
+    width: 100%; }
+  #form input[type=checkbox] {
+    visibility: hidden; }
+  #form #checkbox {
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin: 0;
+    padding: 0;
+    width: 20px;
+    height: 20px; }
+  #form .customCheck {
+    width: 90%;
+    float: left;
+    margin-top: 20px;
+    position: relative; }
+  #form .customCheck label {
+    cursor: pointer;
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    top: 0;
+    left: 0;
+    background: #eee;
+    border: 1px solid #ddd; }
+  #form .customCheck label:after {
+    opacity: 0.2;
+    content: '';
+    position: absolute;
+    width: 9px;
+    height: 5px;
+    background: transparent;
+    top: 5px;
+    left: 4px;
+    border: 3px solid #333;
+    border-top: none;
+    border-right: none;
+    -webkit-transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+    -o-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+    transform: rotate(-45deg); }
+  #form .customCheck label:hover::after {
+    opacity: 0.5; }
+  #form .customCheck input[type=checkbox]:checked + label:after {
+    opacity: 1; }
+  #form .robot {
+    display: inline-block;
+    position: relative;
+    width: 60%;
+    margin: 0 0 0 30px;
+    line-height: 1em; }
+  #form #submit {
+    border: 0;
+    width: 25%;
+    height: 60px;
+    margin: 30px auto 0;
+    background: #eee;
+    color: #333;
+    text-align: center;
+    transition: background, color, 0.5s ease 0;
+    border: 0;
+    font-size: 1.2em;
+    line-height: 1.5em;
+    color: #333333;
+    letter-spacing: 0.01em;
+    font-style: normal;
+    font-weight: 300; }
+  #form #submit:hover {
+    background: #DADADA;
+    border: 1px #DADADA;
+    color: #C43C3E; }
+  #form #wrapper {
+    max-width: 1020px;
+    height: 100%;
+    background: #fff;
+    margin: 0 auto;
+    padding: 20px; }
+  #form #subscribeBox {
+    position: relative;
+    margin: 0 auto;
+    padding: 10px 0;
+    height: auto;
+    width: 50%;
+    min-width: 325px; }
+  #form *:focus {
+    outline: none; }
+  #form .subscribeForm {
+    margin: 20px 0 0;
+    width: 90%; }
+  #form h2 {
+    font-weight: 500;
+    letter-spacing: 0.05em;
+    color: #333333;
+    font-style: normal; }
+  #form .thin {
+    font-weight: 200; }
+  #form a {
+    text-decoration: none;
+    color: #333333; }
+  #form a:hover {
+    text-decoration: none;
+    color: #C43C3E; }
+  #form p {
+    width: 90%;
+    margin: 20px 0 0;
+    font-size: 1.2em;
+    line-height: 1.5em;
+    color: #333333;
+    letter-spacing: 0.01em;
+    font-style: normal;
+    font-weight: 300; }
