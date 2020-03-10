@@ -1,0 +1,29 @@
+#posts{
+  background-color: $blue-dark;
+  padding: 20px 40px;
+  ul{
+    display: grid;
+    grid-template-rows: auto auto auto auto;
+    grid-gap: 20px;
+    @include md{
+      grid-template-rows: auto auto;
+      grid-template-columns: auto auto;
+    }
+    li{
+      div{
+        background-color: $white;
+        padding: 20px;
+        img{
+          padding-bottom: 5px;
+        }
+        h3{
+          color: $red;
+          font-size: rem-calc(26);
+          padding-bottom: 5px;
+        }
+      }
+
+    }
+  }
+
+}

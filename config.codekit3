@@ -293,6 +293,39 @@
 		"opt": 0,
 		"q": 100
 		},
+	"/deploy/img/testimony/avi.png": {
+		"ft": 32768,
+		"iS": 1024,
+		"oA": 0,
+		"oAP": "/deploy/img/testimony/avi.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"/deploy/img/testimony/budlight-form.png": {
+		"ft": 32768,
+		"iS": 105978,
+		"oA": 0,
+		"oAP": "/deploy/img/testimony/budlight-form.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"/deploy/img/testimony/budlight.jpg": {
+		"ft": 16384,
+		"iS": 651974,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/deploy/img/testimony/budlight.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
 	"/deploy/index.html": {
 		"cB": 0,
 		"ft": 8192,
@@ -881,6 +914,45 @@
 		"oS": 0,
 		"uL": 1
 		},
+	"/dev/scss/testimony-sections/_form.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "/dev/scss/testimony-sections/_form.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
+	"/dev/scss/testimony-sections/_posts.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "/dev/scss/testimony-sections/_posts.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
+	"/dev/scss/testimony-sections/_testimony-hero.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "/dev/scss/testimony-sections/_testimony-hero.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
 	"/dev/sponsors/brand.kit": {
 		"cB": 0,
 		"ft": 2048,
@@ -952,6 +1024,30 @@
 		"oA": 1,
 		"oAP": "/dev/sponsors/viewers.html",
 		"oF": 0
+		},
+	"/dev/testimony/form.kit": {
+		"cB": 0,
+		"ft": 2048,
+		"hM": 0,
+		"oA": 1,
+		"oAP": "/dev/testimony/form.html",
+		"oF": 0
+		},
+	"/dev/testimony/posts.kit": {
+		"cB": 0,
+		"ft": 2048,
+		"hM": 0,
+		"oA": 1,
+		"oAP": "/dev/testimony/posts.html",
+		"oF": 0
+		},
+	"/dev/testimony/testimony-hero.kit": {
+		"cB": 0,
+		"ft": 2048,
+		"hM": 0,
+		"oA": 1,
+		"oAP": "/dev/testimony/testimony-hero.html",
+		"oF": 1
 		},
 	"/dev/testimony/testimony.kit": {
 		"cB": 0,
