@@ -165,6 +165,18 @@
   .subscribeForm {
     margin: 20px 0 0;
     width: 90%;
+
+    div:nth-child(3){
+      display: flex;
+      align-items: center;
+      #no{
+        margin-left: 10px;
+        margin-right: 20px;
+      }
+      #opinion{
+        margin-left: 10px;
+      }
+    }
   }
   /* Text Styling for h2, p, a */
   h2 {
