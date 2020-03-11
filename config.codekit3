@@ -326,6 +326,17 @@
 		"opt": 0,
 		"q": 100
 		},
+	"/deploy/img/testimony/fans.jpg": {
+		"ft": 16384,
+		"iS": 708097,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/deploy/img/testimony/fans.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
 	"/deploy/index.html": {
 		"cB": 0,
 		"ft": 8192,

@@ -101,16 +101,23 @@
 
     <section class="container" id="form">
       <div>
-        <h1>Have your own thoughts?</h1>
-        <p>Leave a comment and you may be featured next!</p>
+        <h1>HAVE YOUR OWN THOUGHTS?</h1>
+        <h4>Leave a comment and you may be featured next!</h4>
         <form class="subscribeForm" name="Subscription Form" method="post" action="mailto:helen.burgess@central.wa.edu.au" enctype="text/plain">
     
           <input id="fname" type="text" placeholder="Name" Name="Name" required>
-          <!-- Step 1: Add an email field here -->
-          <input id="email" type="email" placeholder="Email" name="Email" required>
-          <!-- Step 2: Add an address field here -->
-          <input id="address" type="message" placeholder="Message" name="Message">
-          <!-- Step 3: add a submit button here -->
+    
+          <p>Do you think NASCAR is a sport?</p>
+    
+          <div>
+          <label for="no">Of course not!</label><br>
+          <input type="radio" id="no" name="no" value="no">
+          <label for="opinion">In my opinion.</label><br>
+          <input type="radio" id="opinion" name="opinion" value="opinion">
+          </div>
+    
+          <input id="address" type="message" placeholder="Why?" name="Message">
+    
           <input id="submit" type="submit" value="Submit">
     
         </form>
