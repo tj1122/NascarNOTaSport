@@ -1,13 +1,13 @@
 #posts{
-  background-color: $purple;
-  padding: 20px 40px;
+  background-color: $purple-dark;
+  padding: 40px;
   ul{
     display: grid;
-    grid-template-rows: auto auto auto auto;
-    grid-gap: 20px;
+    grid-template-rows: auto auto;
+    grid-gap: 40px;
     @include md{
-      grid-template-rows: auto auto;
-      grid-template-columns: auto auto;
+      grid-template-rows: auto;
+      grid-template-columns: 55% auto;
     }
     li{
       div{
@@ -21,8 +21,47 @@
           font-size: rem-calc(26);
           padding-bottom: 5px;
         }
+        p{
+        font-size: rem-calc(16);
+            @include md{
+            line-height: 1.25;
+            font-size: rem-calc(22);
+            }
+            @include lg{
+            }
+        }
       }
-
+    }
+li:nth-child(2){
+    @include md{
+    margin-top: 200px
+}
+}
+    .hidden-post{
+        display: none;
+        @include md{
+        }
+        @include lg{
+            display: block;
+        }
+    }
+    .sub-post{
+        div{
+          background-color: $blue-light;
+          padding: 20px;
+          }
+        h3{
+            font-size: rem-calc(22);
+            color: $purple-light;
+        }
+        p{
+            color: $gray;
+            font-size: rem-calc(16);
+        }
+        @include md{
+        }
+        @include lg{
+        }
     }
   }
 
