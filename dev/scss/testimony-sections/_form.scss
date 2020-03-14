@@ -1,255 +1,257 @@
 #form {
-  display: grid;
-  grid-template-rows: 1fr 1fr;
-  justify-content: center;
-  align-items: center;
-  grid-gap: 20px;
-  @include md {
-    padding: 40px;
-    grid-template-rows: 0fr 0fr;
-    grid-template-columns: auto auto;
-  }
-
-  div {
-    justify-self: center;
-    align-self: center;
-
-    article{
-        padding: 20px;
-        background-color: $blue-light;
-        color: $purple-dark;
-        h1{
-            font-size: rem-calc(30);
-            margin-bottom: 10px;
-        }
-        h4{
-            width: 75%;
-        }
+    z-index: -5;
+    display: grid;
+    grid-template-rows: 1fr;
+    justify-content: center;
+    align-items: center;
+    grid-gap: 20px;
+    overflow: hidden;
+    @include md {
+        position: relative;
+        grid-template-rows: auto;
     }
 
-    section{
-        padding: 20px;
-        form{
-            div{
-                display: grid;
-                grid-template-columns:auto;
-                grid-template-rows: 40px 40px;;
-                label{
-                    display: block;
-                    position: relative;
-                    padding-left: 35px;
-                    margin-bottom: 12px;
-                    cursor: pointer;
-                    font-size: 22px;
-                    -webkit-user-select: none;
-                    -moz-user-select: none;
-                    -ms-user-select: none;
-                    user-select: none;
-                    font-weight: 600;
+    div {
+        justify-self: center;
+        align-self: center;
+
+        article {
+            padding: 30px 20px;
+            background-color: $blue-light;
+            color: $purple-dark;
+            @include md {
+                padding: 70px 50px;
+            }
+            @include lg {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                padding: 80px 50px;
+                position: relative;
+                width: 100vw;
+            }
+
+            div {
+                @include lg {
+                    width: 1024px;
+                }
+
+                h1 {
+                    width: 60%;
+                    font-size: rem-calc(30);
+                    margin-bottom: 10px;
+                    @include md {
+                        font-size: rem-calc(60);
+                    }
+                }
+
+                h4 {
+                    width: 85%;
                     font-size: rem-calc(16);
-                    color: $purple-light;
+                    @include md {
+                        font-size: rem-calc(26);
+                        width: 50%;
+                    }
                 }
-                input{
-                    position: absolute;
-                    opacity: 0;
-                    cursor: pointer;
-                    height: 0;
-                    width: 0;
-                    border: 3px solid $purple-light;
-                }
-                .checkmark{
-                    position: absolute;
-                    top: 0;
-                    left: 0;
-                    height: 25px;
-                    width: 25px;
-                    border: 3px solid $purple-light;
-                    border-radius: 100%;
+            }
+        }
+
+        section {
+            padding: 30px 20px;
+            @include md {
+                padding: 50px;
+            }
+
+            form {
+                > div {
+                    padding-top: 10px;
+                    display: grid;
+                    grid-gap: 10px;
+                    grid-template-columns: auto;
+                    grid-template-rows: 30px 30px;
+
+                    label {
+                        display: block;
+                        position: relative;
+                        padding-top: 5px;
+                        padding-left: 35px;
+                        margin-bottom: 12px;
+                        cursor: pointer;
+                        font-size: 22px;
+                        -webkit-user-select: none;
+                        -moz-user-select: none;
+                        -ms-user-select: none;
+                        user-select: none;
+                        font-weight: 600;
+                        font-size: rem-calc(16);
+                        color: $purple-light;
+                    }
+
+                    input {
+                        position: absolute;
+                        opacity: 0;
+                        cursor: pointer;
+                        height: 0;
+                        width: 0;
+                        border: 3px solid $purple-light;
+                    }
+
+                    .checkmark {
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        height: 20px;
+                        width: 20px;
+                        border: 3px solid $purple-light;
+                        border-radius: 100%;
+                    }
                 }
             }
         }
     }
 
-  }
+    aside {
+        display: none;
+        @include md {
+            position: absolute;
+            display: inline;
+            top: 200px;
+            right: 43%;
+        }
 
-  aside {
-    justify-self: center;
-    align-self: center;
-  }
+        img {
+            display: none;
+            @include md {
+                position: absolute;
+                display: block;
+            }
+        }
 
-  input {
-    width: 75%;
-    border: 3px solid $purple-light;
-    height: 40px;
-    margin: 10px 0 0;
-    padding: 1% 1% 1% 10px;
-    font-size: 1.2em;
-    line-height: 1.5em;
-    color: $orange;
-    letter-spacing: 0.01em;
-    font-style: normal;
-    font-weight: 300;
-    font-size: rem-calc(16);
-  }
+        div {
+            @include md {
+                background-color: $blue;
+                height: 285px;
+                width: 285px;
+                border-radius: 100%;
+                position: absolute;
+                margin: -230px auto auto 100px;
+                @include lg {
+                    margin: -300px auto auto 150px;
+                    height: 450px;
+                    width: 450px;
+                }
+            }
+        }
+    }
+    //Button Hover Effect
+    .radiocontainer:hover input ~ .checkmark {
+        border: 3px solid $orange;
+        transition: 0.25s;
+    }
+    //Button Selected
+    .radiocontainer input:checked ~ .checkmark {
+        border: 3px solid $purple-light;
+    }
 
-  ::placeholder {
-    color: $orange;
-    opacity: 1;
-  }
+    .checkmark:after {
+        content: "";
+        position: absolute;
+        display: none;
+    }
 
+    .radiocontainer input:checked ~ .checkmark:after {
+        display: block;
+    }
 
-#why{
-    height: 200px;
-}
+    .radiocontainer .checkmark:after {
+        top: 5px;
+        left: 5px;
+        width: 10px;
+        height: 10px;
+        border-radius: 50%;
+        background: $orange;
+    }
 
-  #email {
-    width: 100%;
-  }
+    .formtext,
+    textarea {
+        width: 75%;
+        border: 3px solid $purple-light;
+        height: 30px;
+        margin: 10px 0 0;
+        padding: 1%;
+        font-size: 1.2em;
+        line-height: 1.5em;
+        color: $purple-dark;
+        letter-spacing: 0.01em;
+        font-style: normal;
+        font-weight: 300;
+        font-size: rem-calc(16);
+        @include md {
+            width: 50%;
+        }
+    }
 
+    ::placeholder {
+        color: $orange;
+        opacity: 1;
+    }
 
-  input[type=checkbox] {
-    visibility: hidden;
-  }
+    #why {
+        height: 200px;
+    }
 
-  #checkbox {
-    position: absolute;
-    top: 0;
-    left: 0;
-    margin: 0;
-    padding: 0;
-    width: 20px;
-    height: 20px;
-  }
+    #email {
+        width: 100%;
+    }
 
-  .customCheck {
-    width: 90%;
-    float: left;
-    margin-top: 20px;
-    position: relative;
-  }
+    input[type=checkbox] {
+        visibility: hidden;
+    }
 
-  .customCheck label {
-    cursor: pointer;
-    position: absolute;
-    width: 20px;
-    height: 20px;
-    top: 0;
-    left: 0;
-    background: #eee;
-    border: 1px solid #ddd;
-  }
+    #submit {
+        border: 0;
+        width: 180px;
+        height: 35px;
+        margin: 30px 0 0;
+        background: $orange;
+        text-align: center;
+        transition: background, 0.5s ease 0;
+        border: 0;
+        font-size: 1rem;
+        color: white;
+        font-family: Barlow;
+        font-weight: 700;
+        letter-spacing: 0.05rem;
+        display: block;
+    }
 
-  .customCheck label:after {
-    opacity: 0.2;
-    content: '';
-    position: absolute;
-    width: 9px;
-    height: 5px;
-    background: transparent;
-    top: 5px;
-    left: 4px;
-    border: 3px solid #333;
-    border-top: none;
-    border-right: none;
-    -webkit-transform: rotate(-45deg);
-    -moz-transform: rotate(-45deg);
-    -o-transform: rotate(-45deg);
-    -ms-transform: rotate(-45deg);
-    transform: rotate(-45deg);
-  }
+    #submit:hover {
+        transition: 0.25s;
+        background: $gray;
+    }
 
-  .customCheck label:hover::after {
-    opacity: 0.5;
-  }
+    *:focus {
+        outline: none;
+    }
 
-  .customCheck input[type=checkbox]:checked + label:after {
-    opacity: 1;
-  }
+    a:hover {
+        text-decoration: none;
+        color: #C43C3E;
+    }
 
-  .robot {
-    display: inline-block;
-    position: relative;
-    width: 60%;
-    margin: 0 0 0 30px;
-    line-height: 1em;
-  }
+    p {
+        margin-top: 30px;
+        width: 90%;
+        font-size: 1rem;
+        color: $orange;
+        font-weight: 300;
+    }
 
-  #submit {
-    border: 0;
-    width: 25%;
-    height: 60px;
-    margin: 30px auto 0;
-    background: #eee;
-    color: #333;
-    text-align: center;
-    transition: background, color, 0.5s ease 0;
-    border: 0;
-    font-size: 1.2em;
-    line-height: 1.5em;
-    color: #333333;
-    letter-spacing: 0.01em;
-    font-style: normal;
-    font-weight: 300;
-  }
+    #formmessage {
+        height: 180px;
+    }
 
-  #submit:hover {
-    background: #DADADA;
-    border: 1px #DADADA;
-    color: #C43C3E;
-  }
-
-  #wrapper {
-    max-width: 1020px;
-    height: 100%;
-    background: #fff;
-    margin: 0 auto;
-    padding: 20px;
-  }
-  /* Div Layout Styling */
-  #subscribeBox {
-    position: relative;
-    margin: 0 auto;
-    padding: 10px 0;
-    height: auto;
-    width: 50%;
-    min-width: 325px;
-  }
-
-  *:focus {
-    outline: none;
-  }
-
-
-  /* Text Styling for h2, p, a */
-  h2 {
-    font-weight: 500;
-    letter-spacing: 0.05em;
-    color: #333333;
-    font-style: normal;
-  }
-
-  .thin {
-    font-weight: 200;
-  }
-
-  a {
-    text-decoration: none;
-    color: #333333;
-  }
-
-  a:hover {
-    text-decoration: none;
-    color: #C43C3E;
-  }
-
-  p {
-    width: 90%;
-    margin: 20px 0 0;
-    font-size: 1.2em;
-    line-height: 1.5em;
-    color: $orange;
-    letter-spacing: 0.01em;
-    font-style: normal;
-    font-weight: 300;
-  }
+    #formname {
+        margin-top: 0;
+    }
 }
