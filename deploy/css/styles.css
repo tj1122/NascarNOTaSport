@@ -1595,7 +1595,6 @@ footer > div {
         width: 80%; } }
 
 #form {
-  padding: 20px;
   display: grid;
   grid-template-rows: 1fr 1fr;
   justify-content: center;
@@ -1611,27 +1610,72 @@ footer > div {
   #form div {
     justify-self: center;
     align-self: center; }
+    #form div article {
+      padding: 20px;
+      background-color: #EAF7FF;
+      color: #0C153C; }
+      #form div article h1 {
+        font-size: 1.875rem;
+        margin-bottom: 10px; }
+      #form div article h4 {
+        width: 75%; }
+    #form div section {
+      padding: 20px; }
+      #form div section form div {
+        display: grid;
+        grid-template-columns: auto;
+        grid-template-rows: 40px 40px; }
+        #form div section form div label {
+          display: block;
+          position: relative;
+          padding-left: 35px;
+          margin-bottom: 12px;
+          cursor: pointer;
+          font-size: 22px;
+          -webkit-user-select: none;
+          -moz-user-select: none;
+          -ms-user-select: none;
+          user-select: none;
+          font-weight: 600;
+          font-size: 1rem;
+          color: #6874AA; }
+        #form div section form div input {
+          position: absolute;
+          opacity: 0;
+          cursor: pointer;
+          height: 0;
+          width: 0;
+          border: 3px solid #6874AA; }
+        #form div section form div .checkmark {
+          position: absolute;
+          top: 0;
+          left: 0;
+          height: 25px;
+          width: 25px;
+          border: 3px solid #6874AA;
+          border-radius: 100%; }
   #form aside {
     justify-self: center;
     align-self: center; }
   #form input {
-    border: 2px solid #eeeeee;
-    height: 46px;
+    width: 75%;
+    border: 3px solid #6874AA;
+    height: 40px;
     margin: 10px 0 0;
-    padding: 1%;
+    padding: 1% 1% 1% 10px;
     font-size: 1.2em;
     line-height: 1.5em;
-    color: #333333;
+    color: #FF812C;
     letter-spacing: 0.01em;
     font-style: normal;
-    font-weight: 300; }
-  #form #fname {
-    width: 100%; }
-  #form #lname {
-    width: 100%; }
+    font-weight: 300;
+    font-size: 1rem; }
+  #form ::placeholder {
+    color: #FF812C;
+    opacity: 1; }
+  #form #why {
+    height: 200px; }
   #form #email {
-    width: 100%; }
-  #form #address {
     width: 100%; }
   #form input[type=checkbox] {
     visibility: hidden; }
@@ -1719,17 +1763,6 @@ footer > div {
     min-width: 325px; }
   #form *:focus {
     outline: none; }
-  #form .subscribeForm {
-    margin: 20px 0 0;
-    width: 90%; }
-    #form .subscribeForm div:nth-child(3) {
-      display: flex;
-      align-items: center; }
-      #form .subscribeForm div:nth-child(3) #no {
-        margin-left: 10px;
-        margin-right: 20px; }
-      #form .subscribeForm div:nth-child(3) #opinion {
-        margin-left: 10px; }
   #form h2 {
     font-weight: 500;
     letter-spacing: 0.05em;
@@ -1748,7 +1781,7 @@ footer > div {
     margin: 20px 0 0;
     font-size: 1.2em;
     line-height: 1.5em;
-    color: #333333;
+    color: #FF812C;
     letter-spacing: 0.01em;
     font-style: normal;
     font-weight: 300; }

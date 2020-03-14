@@ -1,7 +1,10 @@
 <section class="container" id="form">
   <div>
-    <h1>HAVE YOUR OWN THOUGHTS?</h1>
-    <h4>Leave a comment and you may be featured next!</h4>
+    <article>
+        <h1>HAVE YOUR OWN THOUGHTS?</h1>
+        <h4>Leave a comment and you may be featured next!</h4>
+    </article>
+    <section>
     <form class="subscribeForm" name="Subscription Form" method="post" action="mailto:helen.burgess@central.wa.edu.au" enctype="text/plain">
 
       <input id="fname" type="text" placeholder="Name" Name="Name" required>
@@ -9,17 +12,22 @@
       <p>Do you think NASCAR is a sport?</p>
 
       <div>
-      <label for="no">Of course not!</label><br>
+      <label for="no">Of course not!
       <input type="radio" id="no" name="no" value="no">
-      <label for="opinion">In my opinion.</label><br>
+      <span class="checkmark"></span>
+      </label>
+      <label for="opinion">In my opinion.
       <input type="radio" id="opinion" name="opinion" value="opinion">
+      <span class="checkmark"></span>
+      </label>
       </div>
 
-      <input id="address" type="message" placeholder="Why?" name="Message">
+      <input id="why" type="message" placeholder="Why?" name="Message">
 
       <input id="submit" type="submit" value="Submit">
 
     </form>
+    </section>
   </div>
   <aside>
     <img src="img/testimony/budlight-form.png" alt="budlight">
