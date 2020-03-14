@@ -338,6 +338,9 @@ ul {
 .blue-container {
   background-color: #1D86CA; }
 
+.purple-container {
+  background-color: #0C153C; }
+
 /* =============
     Typography
 ============= */
@@ -1532,16 +1535,23 @@ footer > div {
         font-size: 4.6875rem; } }
 
 #posts {
-  background-color: #1F2C66;
-  padding: 20px 40px; }
+  background-color: #0C153C;
+  padding: 40px; }
+  @media (min-width: 992px) {
+    #posts {
+      padding: 80px 0px; } }
   #posts ul {
     display: grid;
-    grid-template-rows: auto auto auto auto;
-    grid-gap: 20px; }
+    grid-template-rows: auto auto;
+    grid-gap: 40px; }
     @media (min-width: 768px) {
       #posts ul {
-        grid-template-rows: auto auto;
-        grid-template-columns: auto auto; } }
+        grid-template-rows: auto;
+        grid-template-columns: 55% auto; } }
+    @media (min-width: 992px) {
+      #posts ul {
+        grid-gap: 50px;
+        grid-template-columns: repeat(2, 1fr); } }
     #posts ul li div {
       background-color: #fff;
       padding: 20px; }
@@ -1551,162 +1561,229 @@ footer > div {
         color: #EC320D;
         font-size: 1.625rem;
         padding-bottom: 5px; }
+      #posts ul li div p {
+        font-size: 1rem; }
+        @media (min-width: 768px) {
+          #posts ul li div p {
+            line-height: 1.25;
+            font-size: 1.375rem; } }
+    @media (min-width: 768px) {
+      #posts ul li:nth-child(2) {
+        margin-top: 200px; } }
+    @media (min-width: 992px) {
+      #posts ul li:nth-child(2) {
+        margin-top: 110px; } }
+    @media (min-width: 992px) {
+      #posts ul li:nth-child(3) {
+        width: 100%; } }
+    #posts ul .hidden-post {
+      display: none; }
+      @media (min-width: 992px) {
+        #posts ul .hidden-post {
+          display: block; } }
+    #posts ul .sub-post div {
+      background-color: #EAF7FF;
+      padding: 20px; }
+    #posts ul .sub-post h3 {
+      font-size: 1.375rem;
+      color: #6874AA; }
+    #posts ul .sub-post p {
+      color: #323232;
+      font-size: 1rem; }
+    @media (min-width: 992px) {
+      #posts ul .sub-post {
+        width: 80%; } }
 
 #form {
-  padding: 20px;
+  z-index: -5;
   display: grid;
-  grid-template-rows: 1fr 1fr;
+  grid-template-rows: 1fr;
   justify-content: center;
   align-items: center;
   grid-gap: 20px;
-  /* Div Layout Styling */
-  /* Text Styling for h2, p, a */ }
+  overflow: hidden; }
   @media (min-width: 768px) {
     #form {
-      padding: 40px;
-      grid-template-rows: 0fr 0fr;
-      grid-template-columns: auto auto; } }
+      position: relative;
+      grid-template-rows: auto; } }
   #form div {
     justify-self: center;
     align-self: center; }
+    #form div article {
+      padding: 30px 20px;
+      background-color: #EAF7FF;
+      color: #0C153C; }
+      @media (min-width: 768px) {
+        #form div article {
+          padding: 70px 50px; } }
+      @media (min-width: 992px) {
+        #form div article {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          padding: 80px 50px;
+          position: relative;
+          width: 100vw; } }
+      @media (min-width: 992px) {
+        #form div article div {
+          width: 1024px; } }
+      #form div article div h1 {
+        width: 60%;
+        font-size: 1.875rem;
+        margin-bottom: 10px; }
+        @media (min-width: 768px) {
+          #form div article div h1 {
+            font-size: 3.75rem; } }
+      #form div article div h4 {
+        width: 85%;
+        font-size: 1rem; }
+        @media (min-width: 768px) {
+          #form div article div h4 {
+            font-size: 1.625rem;
+            width: 50%; } }
+    #form div section {
+      padding: 30px 20px; }
+      @media (min-width: 768px) {
+        #form div section {
+          padding: 50px; } }
+      #form div section form > div {
+        padding-top: 10px;
+        display: grid;
+        grid-gap: 10px;
+        grid-template-columns: auto;
+        grid-template-rows: 30px 30px; }
+        #form div section form > div label {
+          display: block;
+          position: relative;
+          padding-top: 5px;
+          padding-left: 35px;
+          margin-bottom: 12px;
+          cursor: pointer;
+          font-size: 22px;
+          -webkit-user-select: none;
+          -moz-user-select: none;
+          -ms-user-select: none;
+          user-select: none;
+          font-weight: 600;
+          font-size: 1rem;
+          color: #6874AA; }
+        #form div section form > div input {
+          position: absolute;
+          opacity: 0;
+          cursor: pointer;
+          height: 0;
+          width: 0;
+          border: 3px solid #6874AA; }
+        #form div section form > div .checkmark {
+          position: absolute;
+          top: 0;
+          left: 0;
+          height: 20px;
+          width: 20px;
+          border: 3px solid #6874AA;
+          border-radius: 100%; }
   #form aside {
-    justify-self: center;
-    align-self: center; }
-  #form input {
-    border: 2px solid #eeeeee;
-    height: 46px;
+    display: none; }
+    @media (min-width: 768px) {
+      #form aside {
+        position: absolute;
+        display: inline;
+        top: 200px;
+        right: 43%; } }
+    #form aside img {
+      display: none; }
+      @media (min-width: 768px) {
+        #form aside img {
+          position: absolute;
+          display: block; } }
+    @media (min-width: 768px) {
+      #form aside div {
+        background-color: #8CD2FF;
+        height: 285px;
+        width: 285px;
+        border-radius: 100%;
+        position: absolute;
+        margin: -230px auto auto 100px; } }
+  @media (min-width: 768px) and (min-width: 992px) {
+    #form aside div {
+      margin: -300px auto auto 150px;
+      height: 450px;
+      width: 450px; } }
+  #form .radiocontainer:hover input ~ .checkmark {
+    border: 3px solid #FF812C;
+    transition: 0.25s; }
+  #form .radiocontainer input:checked ~ .checkmark {
+    border: 3px solid #6874AA; }
+  #form .checkmark:after {
+    content: "";
+    position: absolute;
+    display: none; }
+  #form .radiocontainer input:checked ~ .checkmark:after {
+    display: block; }
+  #form .radiocontainer .checkmark:after {
+    top: 5px;
+    left: 5px;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: #FF812C; }
+  #form .formtext,
+  #form textarea {
+    width: 75%;
+    border: 3px solid #6874AA;
+    height: 30px;
     margin: 10px 0 0;
     padding: 1%;
     font-size: 1.2em;
     line-height: 1.5em;
-    color: #333333;
+    color: #0C153C;
     letter-spacing: 0.01em;
     font-style: normal;
-    font-weight: 300; }
-  #form #fname {
-    width: 100%; }
-  #form #lname {
-    width: 100%; }
+    font-weight: 300;
+    font-size: 1rem; }
+    @media (min-width: 768px) {
+      #form .formtext,
+      #form textarea {
+        width: 50%; } }
+  #form ::placeholder {
+    color: #FF812C;
+    opacity: 1; }
+  #form #why {
+    height: 200px; }
   #form #email {
-    width: 100%; }
-  #form #address {
     width: 100%; }
   #form input[type=checkbox] {
     visibility: hidden; }
-  #form #checkbox {
-    position: absolute;
-    top: 0;
-    left: 0;
-    margin: 0;
-    padding: 0;
-    width: 20px;
-    height: 20px; }
-  #form .customCheck {
-    width: 90%;
-    float: left;
-    margin-top: 20px;
-    position: relative; }
-  #form .customCheck label {
-    cursor: pointer;
-    position: absolute;
-    width: 20px;
-    height: 20px;
-    top: 0;
-    left: 0;
-    background: #eee;
-    border: 1px solid #ddd; }
-  #form .customCheck label:after {
-    opacity: 0.2;
-    content: '';
-    position: absolute;
-    width: 9px;
-    height: 5px;
-    background: transparent;
-    top: 5px;
-    left: 4px;
-    border: 3px solid #333;
-    border-top: none;
-    border-right: none;
-    -webkit-transform: rotate(-45deg);
-    -moz-transform: rotate(-45deg);
-    -o-transform: rotate(-45deg);
-    -ms-transform: rotate(-45deg);
-    transform: rotate(-45deg); }
-  #form .customCheck label:hover::after {
-    opacity: 0.5; }
-  #form .customCheck input[type=checkbox]:checked + label:after {
-    opacity: 1; }
-  #form .robot {
-    display: inline-block;
-    position: relative;
-    width: 60%;
-    margin: 0 0 0 30px;
-    line-height: 1em; }
   #form #submit {
     border: 0;
-    width: 25%;
-    height: 60px;
-    margin: 30px auto 0;
-    background: #eee;
-    color: #333;
+    width: 180px;
+    height: 35px;
+    margin: 30px 0 0;
+    background: #FF812C;
     text-align: center;
-    transition: background, color, 0.5s ease 0;
+    transition: background, 0.5s ease 0;
     border: 0;
-    font-size: 1.2em;
-    line-height: 1.5em;
-    color: #333333;
-    letter-spacing: 0.01em;
-    font-style: normal;
-    font-weight: 300; }
+    font-size: 1rem;
+    color: white;
+    font-family: Barlow;
+    font-weight: 700;
+    letter-spacing: 0.05rem;
+    display: block; }
   #form #submit:hover {
-    background: #DADADA;
-    border: 1px #DADADA;
-    color: #C43C3E; }
-  #form #wrapper {
-    max-width: 1020px;
-    height: 100%;
-    background: #fff;
-    margin: 0 auto;
-    padding: 20px; }
-  #form #subscribeBox {
-    position: relative;
-    margin: 0 auto;
-    padding: 10px 0;
-    height: auto;
-    width: 50%;
-    min-width: 325px; }
+    transition: 0.25s;
+    background: #323232; }
   #form *:focus {
     outline: none; }
-  #form .subscribeForm {
-    margin: 20px 0 0;
-    width: 90%; }
-    #form .subscribeForm div:nth-child(3) {
-      display: flex;
-      align-items: center; }
-      #form .subscribeForm div:nth-child(3) #no {
-        margin-left: 10px;
-        margin-right: 20px; }
-      #form .subscribeForm div:nth-child(3) #opinion {
-        margin-left: 10px; }
-  #form h2 {
-    font-weight: 500;
-    letter-spacing: 0.05em;
-    color: #333333;
-    font-style: normal; }
-  #form .thin {
-    font-weight: 200; }
-  #form a {
-    text-decoration: none;
-    color: #333333; }
   #form a:hover {
     text-decoration: none;
     color: #C43C3E; }
   #form p {
+    margin-top: 30px;
     width: 90%;
-    margin: 20px 0 0;
-    font-size: 1.2em;
-    line-height: 1.5em;
-    color: #333333;
-    letter-spacing: 0.01em;
-    font-style: normal;
+    font-size: 1rem;
+    color: #FF812C;
     font-weight: 300; }
+  #form #formmessage {
+    height: 180px; }
+  #form #formname {
+    margin-top: 0; }

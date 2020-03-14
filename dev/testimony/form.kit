@@ -1,27 +1,43 @@
-<section class="container" id="form">
-  <div>
-    <h1>HAVE YOUR OWN THOUGHTS?</h1>
-    <h4>Leave a comment and you may be featured next!</h4>
-    <form class="subscribeForm" name="Subscription Form" method="post" action="mailto:helen.burgess@central.wa.edu.au" enctype="text/plain">
+<section id="form">
+    <div>
+        <article>
+            <div>
+                <h1>HAVE YOUR OWN THOUGHTS?</h1>
+                <h4>Leave a comment and you may be featured next!</h4>
+            </div>
+        </article>
 
-      <input id="fname" type="text" placeholder="Name" Name="Name" required>
+        <section class="container">
+            <form class="subscribeForm" name="Subscription Form" method="post" action="mailto:helen.burgess@central.wa.edu.au" enctype="text/plain">
 
-      <p>Do you think NASCAR is a sport?</p>
+            <p id="formname">Name</p>
+            <input class="formtext" type="text" Name="Name" required>
 
-      <div>
-      <label for="no">Of course not!</label><br>
-      <input type="radio" id="no" name="no" value="no">
-      <label for="opinion">In my opinion.</label><br>
-      <input type="radio" id="opinion" name="opinion" value="opinion">
-      </div>
+            <p>Do you think NASCAR is a sport?</p>
+            <div>
+                <label class="radiocontainer" for="no">Of course not!
+                    <input type="radio" id="no" name="no" value="no">
+                    <span class="checkmark"></span>
+                </label>
 
-      <input id="address" type="message" placeholder="Why?" name="Message">
+                <label class="radiocontainer" for="opinion">In my opinion.
+                    <input type="radio" id="opinion" name="opinion" value="opinion">
+                    <span class="checkmark"></span>
+                </label>
+            </div>
 
-      <input id="submit" type="submit" value="Submit">
+            <p>Why?</p>
+            <textarea id="formmessage" name="message"></textarea>
+            <input id="submit" type="submit" value="SUBMIT">
 
-    </form>
-  </div>
-  <aside>
-    <img src="img/testimony/budlight-form.png" alt="budlight">
-  </aside>
+            </form>
+        </section>
+    </div>
+
+    <aside>
+        <div id="formcircle">
+        </div>
+        <img src="img/testimony/budlight-form.png" alt="budlight">
+    </aside>
+
 </section>
