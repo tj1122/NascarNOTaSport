@@ -1537,6 +1537,9 @@ footer > div {
 #posts {
   background-color: #0C153C;
   padding: 40px; }
+  @media (min-width: 992px) {
+    #posts {
+      padding: 80px 0px; } }
   #posts ul {
     display: grid;
     grid-template-rows: auto auto;
@@ -1545,6 +1548,10 @@ footer > div {
       #posts ul {
         grid-template-rows: auto;
         grid-template-columns: 55% auto; } }
+    @media (min-width: 992px) {
+      #posts ul {
+        grid-gap: 50px;
+        grid-template-columns: repeat(2, 1fr); } }
     #posts ul li div {
       background-color: #fff;
       padding: 20px; }
@@ -1563,6 +1570,12 @@ footer > div {
     @media (min-width: 768px) {
       #posts ul li:nth-child(2) {
         margin-top: 200px; } }
+    @media (min-width: 992px) {
+      #posts ul li:nth-child(2) {
+        margin-top: 110px; } }
+    @media (min-width: 992px) {
+      #posts ul li:nth-child(3) {
+        width: 100%; } }
     #posts ul .hidden-post {
       display: none; }
       @media (min-width: 992px) {
@@ -1577,6 +1590,9 @@ footer > div {
     #posts ul .sub-post p {
       color: #323232;
       font-size: 1rem; }
+    @media (min-width: 992px) {
+      #posts ul .sub-post {
+        width: 80%; } }
 
 #form {
   padding: 20px;

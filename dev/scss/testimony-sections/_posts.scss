@@ -1,6 +1,9 @@
 #posts{
   background-color: $purple-dark;
   padding: 40px;
+  @include lg{
+      padding: 80px 0px;
+  }
   ul{
     display: grid;
     grid-template-rows: auto auto;
@@ -8,6 +11,10 @@
     @include md{
       grid-template-rows: auto;
       grid-template-columns: 55% auto;
+    }
+    @include lg{
+    grid-gap: 50px;
+    grid-template-columns: repeat(2,1fr);
     }
     li{
       div{
@@ -35,7 +42,16 @@
 li:nth-child(2){
     @include md{
     margin-top: 200px
+    }
+    @include lg{
+    margin-top: 110px
+    }
 }
+
+li:nth-child(3){
+    @include lg{
+    width: 100%;
+    }
 }
     .hidden-post{
         display: none;
@@ -61,6 +77,7 @@ li:nth-child(2){
         @include md{
         }
         @include lg{
+                width: 80%;
         }
     }
   }
