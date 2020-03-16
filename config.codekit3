@@ -4,7 +4,7 @@
 	{
 		"name": "Process All Remaining Files and Folders",
 		"stepType": 1,
-		"uuidString": "ABAED7E3-8FEB-49CD-931C-DEAC214E08D9"
+		"uuidString": "2B4E40F1-53E3-48D5-AFA0-6FCE76E917DA"
 		}
 	],
 "creatorBuild": "31934",
@@ -30,7 +30,7 @@
 		"bl": 0,
 		"ft": 16,
 		"ma": 0,
-		"oA": 1,
+		"oA": 0,
 		"oAP": "/deploy/css/styles-min.css",
 		"oF": 0,
 		"oS": 3
@@ -48,7 +48,7 @@
 		},
 	"/deploy/img/athletes/athletes-circlecar.png": {
 		"ft": 32768,
-		"iS": 0,
+		"iS": 668680,
 		"oA": 0,
 		"oAP": "/deploy/img/athletes/athletes-circlecar.png",
 		"oF": 0,
@@ -135,12 +135,6 @@
 		"jF": 0,
 		"oA": 0,
 		"oAP": "/deploy/img/index/page1_hero.jpg",
-	"/deploy/img/sponsors/coke.jpg": {
-		"ft": 16384,
-		"iS": 852820,
-		"jF": 0,
-		"oA": 0,
-		"oAP": "/deploy/img/sponsors/coke.jpg",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 0,
@@ -174,6 +168,33 @@
 		"jF": 0,
 		"oA": 0,
 		"oAP": "/deploy/img/index/page1_link2.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/deploy/img/index/page1_link3.jpg": {
+		"ft": 16384,
+		"iS": 45444,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/deploy/img/index/page1_link3.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/deploy/img/sponsors/coke.jpg": {
+		"ft": 16384,
+		"iS": 852820,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/deploy/img/sponsors/coke.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
 	"/deploy/img/sponsors/corporations.svg": {
 		"ft": 2097152,
 		"miP": 0,
@@ -208,13 +229,13 @@
 		},
 	"/deploy/img/sponsors/hero.jpg": {
 		"ft": 16384,
-		"iS": 605192,
+		"iS": 595697,
 		"jF": 0,
 		"oA": 0,
 		"oAP": "/deploy/img/sponsors/hero.jpg",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 1,
+		"opt": 0,
 		"q": 100
 		},
 	"/deploy/img/sponsors/hood.png": {
@@ -261,18 +282,56 @@
 		"opt": 0,
 		"q": 100
 		},
-	"/deploy/img/index/page1_link3.jpg": {
-		"ft": 16384,
-		"iS": 45444,
-		"jF": 0,
-		"oA": 0,
-		"oAP": "/deploy/img/index/page1_link3.jpg",
 	"/deploy/img/sponsors/xfinity.jpg": {
 		"ft": 16384,
 		"iS": 237979,
 		"jF": 0,
 		"oA": 0,
 		"oAP": "/deploy/img/sponsors/xfinity.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/deploy/img/testimony/avi.png": {
+		"ft": 32768,
+		"iS": 1024,
+		"oA": 0,
+		"oAP": "/deploy/img/testimony/avi.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"/deploy/img/testimony/budlight-form.png": {
+		"ft": 32768,
+		"iS": 105978,
+		"oA": 0,
+		"oAP": "/deploy/img/testimony/budlight-form.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"/deploy/img/testimony/budlight.jpg": {
+		"ft": 16384,
+		"iS": 651974,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/deploy/img/testimony/budlight.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/deploy/img/testimony/fans.jpg": {
+		"ft": 16384,
+		"iS": 708097,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/deploy/img/testimony/fans.jpg",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 0,
@@ -291,7 +350,7 @@
 		"ft": 64,
 		"ma": 0,
 		"mi": 1,
-		"oA": 1,
+		"oA": 0,
 		"oAP": "/deploy/js/DrawSVGPlugin.min-min.js",
 		"oF": 0,
 		"sC": 3,
@@ -302,7 +361,7 @@
 		"ft": 64,
 		"ma": 0,
 		"mi": 1,
-		"oA": 1,
+		"oA": 0,
 		"oAP": "/deploy/js/scripts-min-min.js",
 		"oF": 0,
 		"sC": 3,
@@ -362,7 +421,7 @@
 		"hM": 0,
 		"oA": 0,
 		"oAP": "/deploy/athletes.html",
-		"oF": 3
+		"oF": 2
 		},
 	"/dev/footer.kit": {
 		"cB": 0,
@@ -400,7 +459,7 @@
 		"cB": 0,
 		"ft": 2048,
 		"hM": 0,
-		"oA": 1,
+		"oA": 0,
 		"oAP": "/deploy/index.html",
 		"oF": 2
 		},
@@ -488,7 +547,7 @@
 		"ft": 64,
 		"ma": 0,
 		"mi": 1,
-		"oA": 1,
+		"oA": 0,
 		"oAP": "/deploy/js/scripts-min.js",
 		"oF": 2,
 		"sC": 3,
@@ -862,7 +921,46 @@
 		"ma": 0,
 		"oA": 0,
 		"oAP": "/deploy/css/styles.css",
-		"oF": 3,
+		"oF": 2,
+		"oS": 0,
+		"uL": 1
+		},
+	"/dev/scss/testimony-sections/_form.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "/dev/scss/testimony-sections/_form.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
+	"/dev/scss/testimony-sections/_posts.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "/dev/scss/testimony-sections/_posts.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
+	"/dev/scss/testimony-sections/_testimony-hero.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "/dev/scss/testimony-sections/_testimony-hero.css",
+		"oF": 0,
 		"oS": 0,
 		"uL": 1
 		},
@@ -926,7 +1024,7 @@
 		"cB": 0,
 		"ft": 2048,
 		"hM": 0,
-		"oA": 1,
+		"oA": 0,
 		"oAP": "/deploy/sponsors.html",
 		"oF": 2
 		},
@@ -938,11 +1036,35 @@
 		"oAP": "/dev/sponsors/viewers.html",
 		"oF": 0
 		},
-	"/dev/testimony/testimony.kit": {
+	"/dev/testimony/form.kit": {
 		"cB": 0,
 		"ft": 2048,
 		"hM": 0,
 		"oA": 1,
+		"oAP": "/dev/testimony/form.html",
+		"oF": 0
+		},
+	"/dev/testimony/posts.kit": {
+		"cB": 0,
+		"ft": 2048,
+		"hM": 0,
+		"oA": 1,
+		"oAP": "/dev/testimony/posts.html",
+		"oF": 0
+		},
+	"/dev/testimony/testimony-hero.kit": {
+		"cB": 0,
+		"ft": 2048,
+		"hM": 0,
+		"oA": 1,
+		"oAP": "/dev/testimony/testimony-hero.html",
+		"oF": 1
+		},
+	"/dev/testimony/testimony.kit": {
+		"cB": 0,
+		"ft": 2048,
+		"hM": 0,
+		"oA": 0,
 		"oAP": "/deploy/testimony.html",
 		"oF": 2
 		},
@@ -2456,7 +2578,7 @@
 	"externalServerAddress": "http://localhost:8888",
 	"gitIgnoreBuildFolder": 1,
 	"hideConfigFile": 0,
-	"jsCheckerReservedNamesString": "$, gsap",
+	"jsCheckerReservedNamesString": "",
 	"jsHintFlags2": {
 		"asi": {
 			"active": 0,

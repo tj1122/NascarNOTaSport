@@ -1,15 +1,16 @@
-#sponsors-hero{
+#testimony-hero{
 
   padding-top: 68px;
   #red-hero{
-    background-image: url("../img/sponsors/hero.jpg");
+    background-image: url("../img/testimony/fans.jpg");
     background-size: cover;
     background-position: 70% center;
     background-repeat: no-repeat;
     height: 70vh;
     display: grid;
-    grid-template-rows: 1fr 1fr 1fr;
-    grid-template-areas: "red-opacity no-red-opacity red-opacity";
+    grid-template-columns: 1fr 1fr 0fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: "red-opacity no-red-opacity .";
 
     @include md{
       grid-template-columns: 1.5fr 1fr 0fr;

@@ -28,3 +28,17 @@ ul{
         padding: 50px 0;
     }
 }
+
+
+.container {
+    max-width: 1024px;
+    margin: 0px auto;
+  }
+
+  .blue-container {
+      background-color: $blue-dark;
+    }
+
+    .purple-container {
+        background-color: $purple-dark;
+      }
