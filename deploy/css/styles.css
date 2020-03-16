@@ -662,7 +662,7 @@ footer > div {
     @media (min-width: 768px) {
       #notSport > div > section {
         grid-area: content;
-        margin: 50px 0 0; } }
+        margin: 0 0; } }
     @media (min-width: 992px) {
       #notSport > div > section {
         margin-left: 3%;
@@ -814,7 +814,7 @@ footer > div {
         width: 90%; } }
     @media (min-width: 992px) {
       #gallery > div ul li:nth-child(1) {
-        height: 55vh;
+        height: 52vh;
         width: 85%; } }
     #gallery > div ul li:nth-child(1) div {
       background-color: #8CD2FF; }
@@ -831,8 +831,8 @@ footer > div {
         margin-top: 30%; } }
     @media (min-width: 992px) {
       #gallery > div ul li:nth-child(2) {
-        width: 65%;
-        height: 25vh;
+        width: 75%;
+        height: 27vh;
         margin-top: 0; } }
     #gallery > div ul li:nth-child(2) div {
       background-color: #EC320D; }
@@ -851,7 +851,7 @@ footer > div {
         margin-left: 15%; } }
     @media (min-width: 992px) {
       #gallery > div ul li:nth-child(3) {
-        height: 40vh;
+        height: 37vh;
         width: 100%;
         margin-left: 0; } }
     #gallery > div ul li:nth-child(3) div {
