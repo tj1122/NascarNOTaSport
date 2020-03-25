@@ -1,85 +1,91 @@
-#posts{
-  background-color: $purple-dark;
-  padding: 40px;
-  @include lg{
-      padding: 80px 0px;
-  }
-  ul{
-    display: grid;
-    grid-template-rows: auto auto;
-    grid-gap: 40px;
-    @include md{
-      grid-template-rows: auto;
-      grid-template-columns: 55% auto;
+#posts {
+    background-color: $purple-dark;
+    padding: 40px;
+    @include lg {
+        padding: 80px 0;
     }
-    @include lg{
-    grid-gap: 50px;
-    grid-template-columns: repeat(2,1fr);
-    }
-    li{
-      div{
-        background-color: $white;
-        padding: 20px;
-        img{
-          padding-bottom: 5px;
-        }
-        h3{
-          color: $red;
-          font-size: rem-calc(26);
-          padding-bottom: 5px;
-        }
-        p{
-        font-size: rem-calc(16);
-            @include md{
-            line-height: 1.25;
-            font-size: rem-calc(22);
-            }
-            @include lg{
-            }
-        }
-      }
-    }
-li:nth-child(2){
-    @include md{
-    margin-top: 200px
-    }
-    @include lg{
-    margin-top: 110px
-    }
-}
 
-li:nth-child(3){
-    @include lg{
-    width: 100%;
-    }
-}
-    .hidden-post{
-        display: none;
-        @include md{
+    ul {
+        display: grid;
+        grid-template-rows: auto auto;
+        grid-gap: 40px;
+        @include md {
+            grid-template-rows: auto;
+            grid-template-columns: 55% auto;
         }
-        @include lg{
-            display: block;
+        @include lg {
+            grid-gap: 50px;
+            grid-template-columns: repeat(2,1fr);
         }
-    }
-    .sub-post{
-        div{
-          background-color: $blue-light;
-          padding: 20px;
-          }
-        h3{
-            font-size: rem-calc(22);
-            color: $purple-light;
+
+        li {
+            div {
+                background-color: $white;
+                padding: 20px;
+
+                img {
+                    padding-bottom: 5px;
+                }
+
+                h3 {
+                    color: $red;
+                    font-size: rem-calc(26);
+                    padding-bottom: 5px;
+                }
+
+                p {
+                    font-size: rem-calc(16);
+                    @include md {
+                        line-height: 1.25;
+                        font-size: rem-calc(22);
+                    }
+                    @include lg {}
+                }
+            }
         }
-        p{
-            color: $gray;
-            font-size: rem-calc(16);
+
+        li:nth-child(2) {
+            @include md {
+                margin-top: 200px;
+            }
+            @include lg {
+                margin-top: 110px;
+            }
         }
-        @include md{
+
+        li:nth-child(3) {
+            @include lg {
+                width: 100%;
+            }
         }
-        @include lg{
+
+        .hidden-post {
+            display: none;
+            @include md {}
+            @include lg {
+                display: block;
+            }
+        }
+
+        .sub-post {
+            div {
+                background-color: $blue-light;
+                padding: 20px;
+            }
+
+            h3 {
+                font-size: rem-calc(22);
+                color: $purple-light;
+            }
+
+            p {
+                color: $gray;
+                font-size: rem-calc(16);
+            }
+            @include md {}
+            @include lg {
                 width: 80%;
+            }
         }
     }
-  }
-
 }

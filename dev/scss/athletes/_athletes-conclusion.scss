@@ -1,50 +1,58 @@
-#athletes-conclusion{
-    section{
+#athletes-conclusion {
+    section {
         @include md {
             background-color: $blue-light;
-            padding: 50px 0px 100px;
+            padding: 50px 0 100px;
             position: relative;
             display: grid;
             grid-template-columns: 30% 70%;
-            grid-template-areas: "athleteconimg athleteconp"
+            grid-template-areas: "athleteconimg athleteconp";
         }
         @include lg {
             grid-template-columns: 40% 60%;
             padding: 50px 100px 200px;
             z-index: -1;
         }
-        article{
+
+        article {
             grid-area: athleteconp;
             z-index: 1;
             background-color: $purple-dark;
             color: $blue;
             padding: 40px 30px;
-            @include md {padding: 50px;}
-            @include lg {width: 500px;}
-            p{
+            @include md {
+                padding: 50px;
+            }
+            @include lg {
+                width: 500px;
+            }
+
+            p {
                 font-size: rem-calc(18);
-                span{
+
+                span {
                     font-weight: 600;
                 }
             }
-            h3{
-                padding: 5px 0px;
 
+            h3 {
+                padding: 5px 0;
                 font-size: rem-calc(26);
             }
         }
-        div{
+
+        div {
             height: 50vh;
             background-image: url("../img/athletes/athletes-car.jpg");
             @include md {
-            position: absolute;
-            height: 30vh;
-            width: 400px;
-            bottom: -100px;
-        }
+                position: absolute;
+                height: 30vh;
+                width: 400px;
+                bottom: -100px;
+            }
             @include lg {
                 bottom: auto;
-                top:100px;
+                top: 100px;
                 right: 55%;
                 height: 500px;
                 width: 500px;
@@ -52,35 +60,33 @@
             }
         }
     }
-        #athletes-end{
-            color: $purple-dark;
-            padding: 40px 30px;
-            font-size: rem-calc(26);
-            @include md {
-                padding: 150px 100px 50px;
-                text-align: center;
-            }
-            @include lg {
-                width: 500px;
-                text-align: left;
-                padding: 0px 100px 50px;
-                margin-left: 40%;
-                margin-top: -160px;
-                z-index: 10;
-            }
+
+    #athletes-end {
+        color: $purple-dark;
+        padding: 40px 30px;
+        font-size: rem-calc(26);
+        @include md {
+            padding: 150px 100px 50px;
+            text-align: center;
         }
-        h2{
-            color: $red;
-            font-size: rem-calc(35);
-            padding: 0 30px;
-            @include md {
-                padding: 0px 50px;
-                text-align: center;
-            }
-            @include lg {
-
-            }
+        @include lg {
+            width: 500px;
+            text-align: left;
+            padding: 0 100px 50px;
+            margin-left: 40%;
+            margin-top: -160px;
+            z-index: 10;
         }
+    }
 
-
+    h2 {
+        color: $red;
+        font-size: rem-calc(35);
+        padding: 0 30px 30px;
+        @include md {
+            padding: 0 50px 50px;
+            text-align: center;
+        }
+        @include lg {}
+    }
 }
