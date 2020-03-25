@@ -293,9 +293,20 @@
 		"opt": 0,
 		"q": 100
 		},
+	"/deploy/img/testimony/avi-tuba.jpg": {
+		"ft": 16384,
+		"iS": 11360,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/deploy/img/testimony/avi-tuba.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
 	"/deploy/img/testimony/avi.png": {
 		"ft": 32768,
-		"iS": 1024,
+		"iS": 2214,
 		"oA": 0,
 		"oAP": "/deploy/img/testimony/avi.png",
 		"oF": 0,

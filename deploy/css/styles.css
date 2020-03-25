@@ -1509,12 +1509,12 @@ footer > div {
     background-repeat: no-repeat;
     height: 70vh;
     display: grid;
-    grid-template-columns: 1fr 1fr 0fr;
+    grid-template-columns: 1fr 1fr 0;
     grid-template-rows: 1fr;
     grid-template-areas: "red-opacity no-red-opacity ."; }
     @media (min-width: 768px) {
       #testimony-hero #red-hero {
-        grid-template-columns: 1.5fr 1fr 0fr;
+        grid-template-columns: 1.5fr 1fr 0;
         grid-template-rows: 1fr;
         background-position: center;
         background-position: 30% center;
@@ -1544,7 +1544,7 @@ footer > div {
   padding: 40px; }
   @media (min-width: 992px) {
     #posts {
-      padding: 80px 0px; } }
+      padding: 80px 0; } }
   #posts ul {
     display: grid;
     grid-template-rows: auto auto;
