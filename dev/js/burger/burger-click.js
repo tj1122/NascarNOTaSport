@@ -3,15 +3,27 @@
 ------------------------------ */
 
 var lineToX = gsap.timeline({paused:true});
-lineToX.to("#burger-container",{duration: 0.25, rotate:-180},"twist")
-lineToX.to("#top-line",{duration: 0.5, rotate:-45},"twist")
-lineToX.to("#bottom-line",{duration: 0.5, rotate:45},"twist")
-lineToX.from("#outline",{duration: 0.4, drawSVG: 0},"twist");
+lineToX.to("#bottom-bar",{duration:0.25, drawSVG: "49.5% 50.5%"},"outlineDraw")
+.to("#circle-outline",{duration:0.25, drawSVG: "100%",delay:.15},"outlineDraw")
+.to(".cross",{duration:0.25, drawSVG: "20% 60%",alpha:1})
+.to("#down-left",{duration:.5,rotate:360,repeat:2,ease: "none"},"wheelTurn")
+.to("#up-left",{duration:.5,rotate:360,repeat:2,ease: "none"},"wheelTurn")
+.to("#down-right",{duration:.5,rotate:180,repeat:2,ease: "none"},"wheelTurn")
+.to("#up-right",{duration:.5,rotate:180,repeat:2,ease: "none"},"wheelTurn")
+;
+
+var xToLine = gsap.timeline({paused:true});
+xToLine.to(".cross",{duration:0.25,drawSVG:0,alpha:0})
+.to("#circle-outline",{duration:0.25,drawSVG:0},"outlineBreak")
+.to("#bottom-bar",{duration:0.25,drawSVG:"100%",delay:0.15},"outlineBreak");
 
 $("#burger-container").on("click", function(){
     console.log("click");
 
+
+
     if(isNavVisible === false){
+        lineToX.invalidate().restart();
         lineToX.play();
         // make the outline visible
         gsap.set("#outline",{alpha:1});
@@ -25,7 +37,8 @@ $("#burger-container").on("click", function(){
 
         isNavVisible = true;
     }else{
-        lineToX.reverse();
+        xToLine.invalidate().restart();
+        xToLine.play();
 
         // slide back web site content
         gsap.to("main",{duration:0.25, x:0});
