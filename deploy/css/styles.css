@@ -860,11 +860,12 @@ footer > div {
 #athletes-hero {
   background-image: url("../img/athletes/athletes-hero.jpg");
   height: 70vh;
-  background-position: 50% -70%;
+  background-position: 60% center;
   background-size: cover;
   padding-top: 68px; }
   @media (min-width: 768px) {
     #athletes-hero {
+      background-position: 58% center;
       height: 70vh;
       background-size: cover; } }
   @media (min-width: 992px) {
@@ -880,7 +881,11 @@ footer > div {
     align-items: center; }
     @media (min-width: 768px) {
       #athletes-hero h1 {
-        font-size: 4.6875rem; } }
+        font-size: 4.6875rem;
+        padding-left: 50px; } }
+    @media (min-width: 992px) {
+      #athletes-hero h1 {
+        padding-left: 80px; } }
 
 #athletes-info section {
   background-color: #F1F1F1;
@@ -902,7 +907,7 @@ footer > div {
   #athletes-info section h3 {
     color: #EC320D;
     font-weight: 700;
-    padding: 10px 0px; }
+    padding: 10px 0; }
     @media (min-width: 768px) {
       #athletes-info section h3 {
         font-size: 2.375rem; } }
@@ -918,7 +923,7 @@ footer > div {
   @media (min-width: 992px) {
     #athletes-who {
       grid-template-columns: 35% auto;
-      grid-template-areas: "athletesWhoTitle athletesWhoImgs" "athletesWhoPara  athletesWhoImgs"; } }
+      grid-template-areas: "athletesWhoTitle athletesWhoImgs" "athletesWhoPara athletesWhoImgs"; } }
   #athletes-who h2 {
     grid-area: athletesWhoTitle;
     color: #8CD2FF;
@@ -1015,21 +1020,21 @@ footer > div {
       padding: 30px 30px 5px; }
       @media (min-width: 768px) {
         #athletes-who section h3 {
-          padding: 30px 0px 5px 50px; } }
+          padding: 30px 0 5px 50px; } }
     #athletes-who section p {
       color: #EAF7FF;
       padding: 0 30px 40px; }
       @media (min-width: 768px) {
         #athletes-who section p {
-          padding: 0px 0px 50px 50px; } }
+          padding: 0 0 50px 50px; } }
       @media (min-width: 992px) {
         #athletes-who section p {
-          padding: 0px 50px 50px; } }
+          padding: 0 50px 50px; } }
 
 @media (min-width: 768px) {
   #athletes-conclusion section {
     background-color: #EAF7FF;
-    padding: 50px 0px 100px;
+    padding: 50px 0 100px;
     position: relative;
     display: grid;
     grid-template-columns: 30% 70%;
@@ -1058,7 +1063,7 @@ footer > div {
     #athletes-conclusion section article p span {
       font-weight: 600; }
   #athletes-conclusion section article h3 {
-    padding: 5px 0px;
+    padding: 5px 0;
     font-size: 1.625rem; }
 
 #athletes-conclusion section div {
@@ -1091,7 +1096,7 @@ footer > div {
     #athletes-conclusion #athletes-end {
       width: 500px;
       text-align: left;
-      padding: 0px 100px 50px;
+      padding: 0 100px 50px;
       margin-left: 40%;
       margin-top: -160px;
       z-index: 10; } }
@@ -1099,10 +1104,10 @@ footer > div {
 #athletes-conclusion h2 {
   color: #EC320D;
   font-size: 2.1875rem;
-  padding: 0 30px; }
+  padding: 0 30px 30px; }
   @media (min-width: 768px) {
     #athletes-conclusion h2 {
-      padding: 0px 50px;
+      padding: 0 50px 50px;
       text-align: center; } }
 
 #sponsors-hero {
